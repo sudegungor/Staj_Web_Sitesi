@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#anasayfa.xhtml" PATH="/anasayfa.xhtml"
+  SHAPE="86,139,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#anasayfa.xhtml:0" NAME="item"
+   PATH="/anasayfa.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cv::#cv.xhtml" NAME="output"
+    PATH="/cv.xhtml" TARGET="rules:#cv.xhtml" TITLE="cv" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="stajDuyuru::#stajDuyuru.xhtml"
+    NAME="output1" PATH="/stajDuyuru.xhtml"
+    TARGET="rules:#stajDuyuru.xhtml" TITLE="stajDuyuru" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#cv.xhtml" PATH="/cv.xhtml"
+  SHAPE="504,136,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#cv.xhtml:0" NAME="item" PATH="/cv.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="anasayfa::#anasayfa.xhtml" NAME="output"
+    PATH="/anasayfa.xhtml" TARGET="rules:#anasayfa.xhtml"
+    TITLE="anasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="stajDuyuru::#stajDuyuru.xhtml"
+    NAME="output1" PATH="/stajDuyuru.xhtml"
+    TARGET="rules:#stajDuyuru.xhtml" TITLE="stajDuyuru" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#stajDuyuru.xhtml" PATH="/stajDuyuru.xhtml"
+  SHAPE="288,260,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#stajDuyuru.xhtml:0" NAME="item"
+   PATH="/stajDuyuru.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cv::#cv.xhtml" NAME="output"
+    PATH="/cv.xhtml" TARGET="rules:#cv.xhtml" TITLE="cv" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="anasayfa::#anasayfa.xhtml" NAME="output1"
+    PATH="/anasayfa.xhtml" TARGET="rules:#anasayfa.xhtml"
+    TITLE="anasayfa" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#ogrenciBilgileri.xhtml"
+  PATH="/ogrenciBilgileri.xhtml" SHAPE="855,145,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#ogrenciBilgileri.xhtml:0" NAME="item"
+   PATH="/ogrenciBilgileri.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="sertifikaBilgisi::#sertifikaBilgisi.xhtml"
+    NAME="output" PATH="/sertifikaBilgisi.xhtml"
+    TARGET="rules:#sertifikaBilgisi.xhtml" TITLE="sertifikaBilgisi" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciYabanciDil::#ogrenciYabanciDil.xhtml"
+    NAME="output1" PATH="/ogrenciYabanciDil.xhtml"
+    TARGET="rules:#ogrenciYabanciDil.xhtml" TITLE="ogrenciYabanciDil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciBilgisayarBilgisi::#ogrenciBilgisayarBilgisi.xhtml"
+    NAME="output2" PATH="/ogrenciBilgisayarBilgisi.xhtml"
+    TARGET="rules:#ogrenciBilgisayarBilgisi.xhtml"
+    TITLE="ogrenciBilgisayarBilgisi" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#sertifikaBilgisi.xhtml"
+  PATH="/sertifikaBilgisi.xhtml" SHAPE="848,384,50,25"
+  model-entity="JSFProcessGroup" persistent="true"/>
+ <PROCESS-ITEM NAME="rules:#ogrenciYabanciDil.xhtml"
+  PATH="/ogrenciYabanciDil.xhtml" SHAPE="1192,176,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#ogrenciYabanciDil.xhtml:0" NAME="item"
+   PATH="/ogrenciYabanciDil.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="ogrenciBilgileri::#ogrenciBilgileri.xhtml"
+    NAME="output" PATH="/ogrenciBilgileri.xhtml"
+    TARGET="rules:#ogrenciBilgileri.xhtml" TITLE="ogrenciBilgileri" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#ogrenciBilgisayarBilgisi.xhtml"
+  PATH="/ogrenciBilgisayarBilgisi.xhtml" SHAPE="1197,318,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#ogrenciBilgisayarBilgisi.xhtml:0" NAME="item"
+   PATH="/ogrenciBilgisayarBilgisi.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="ogrenciBilgileri::#ogrenciBilgileri.xhtml"
+    NAME="output" PATH="/ogrenciBilgileri.xhtml"
+    TARGET="rules:#ogrenciBilgileri.xhtml" TITLE="ogrenciBilgileri" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>

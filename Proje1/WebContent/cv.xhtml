@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head></h:head>
+<body>
+	<f:view>
+		<h:form>
+		<link href="ozellik.css" rel="stylesheet" type="text/css" />
+			<table border="1" width="1030" cellpadding="1" cellspacing="1" >
+			
+				<div id="ustCerceve">
+				<ul id="textOz" >
+			
+					Kullanıcı Adı:<h:inputText value="pass" />&nbsp; 
+					 Parola:<h:inputSecret value="pass" />&nbsp; 
+					<h:commandButton action="pass" value="Giriş" /></ul>
+					<ul id="icerik"></ul>
+					<ul id="bosluk"></ul>
+					
+					<ul>
+					<td id="solIcerik"><h:commandLink action="anasayfa" value="İs Hayati Hakkinda Bilgiler" /> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					<h:commandLink action="stajDuyuru" value="Staj Duyuruları" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					<h:commandLink action="cv" value="Cv Hazırlamanın Püf Noktaları" /></td>
+					
+					
+					<td id="sagIcerik"><h:commandButton action="pass" value="Ogrenci Kayit" /> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					<h:commandButton action="pass" value="Firma Kayit" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					<h:commandButton action="pass" value="Personel Kayit" /> </td>
+					
+					
+					
+					<tr>
+					
+					<td  id="solAltIcerik">
+				
+				<p:imageCropper image="ozgecmis2.png" height="70" width="70"></p:imageCropper>
+				<br />
+				<ul>A4 kağıda yazmalısın.</ul>
+				<ul>Özgeçmişin en fazla 2 sayfa olmalı. (Akademik CV daha uzun olabilir.)</ul>
+				<ul>Uzun paragraflardan kaçınmalısın. (CV incelemelerine en fazla 1-3 dakika süre ayrılıyor)</ul>
+				
+					</td>
+					
+				<td id="sagAltIcerik" >
+					
+				<h:panelGrid columns="3">
+				<td >
+					<ul style="position: absolute;left: 750px;top: 290px;">E-mail:</ul><p:inputText value="pass" size="30" style="position: absolute;left: 900px;top: 300px;" ></p:inputText><h:graphicImage value="/mail.png" style="position: absolute;left: 1215px;top: 303px;" /><br />
+					
+					<ul style="position: absolute;left: 750px;top: 340px;">Kullanıcı Adı:</ul><p:inputText value="pass" size="30" style="position: absolute;left: 900px;top: 350px;"></p:inputText><h:graphicImage value="/person.png" style="position: absolute;left: 1215px;top: 353px;" />
+					
+					<ul style="position: absolute;left: 750px;top: 390px;">Parola:</ul><p:inputText value="pass" size="30" style="position: absolute;left: 900px;top: 400px;" ></p:inputText><h:graphicImage value="/sifre.png" style="position: absolute;left: 1215px;top: 403px;"/>
+				
+					<ul><h:commandButton action="pass" value="Kayit Ol"  id="buton" style="background-color:#C0E6FF;color:white;width:30%;position: absolute; left: 785px;top: 453px;"/></ul>
+					<ul ><h:commandLink action="pass" value="Yardıma mı ihtiyacın var?" style="position:absolute;left:905px;top:500px;" /></ul>
+	<ul style="position: absolute;left: 800px;top: 550px;" >Giriş yaparak INTERNSHIP TIME </ul>
+	<h:commandLink action="pass" value=" Hizmet Koşulları'nı " style="position:absolute;left:1080px;top:565px;" /> 
+	<ul style="position: absolute;left: 1180px;top: 550px;">ve</ul>
+	<h:commandLink action="pass" value=" KVKK 'yı " style="position:absolute;left:840px;top:590px;" />
+	<ul style="position:absolute;left:870px;top:575px;">kabul etmiş olursunuz.</ul> 
+				</td>
+					
+				
+					</h:panelGrid>
+				</td>
+					</tr>
+					
+					
+					
+					
+					
+					</ul>
+				</div>	
+			</table>
+		</h:form>
+	</f:view>
+
+</body>
+</html>
