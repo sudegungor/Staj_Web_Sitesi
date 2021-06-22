@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head></h:head>
+<body>
+	<f:view>
+
+		<h:form>
+			<link href="ozellik.css" rel="stylesheet" type="text/css" />
+			<table border="1" width="1500" cellpadding="1" cellspacing="1" height="1000" align="center">
+				<div id="ustCerceve">
+					<ul id="icerik"></ul>
+					
+					<tr id="menu">
+					
+					
+				
+					<td width="500" style="background:#C0E6FF" >
+							<li align="center" type="none"  style="font-weight:bold;">BİLGİLER</li>
+						
+					
+					</td>
+					
+						<td width="4500" >
+							<h:commandLink action="ogrenciAnasayfa" value="Anasayfa" /> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="ogrenciProfil" value="Profilim" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="ogrenciBasvurularim" value="Başvurularım" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="ogrenciFirmaGor" value="İlanlar" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="ogrenciFirmaListele" value="Firmalar" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					
+					</td>
+					
+					</tr>
+					
+					
+					
+					
+									
+			<tr >
+					
+				<td  Valign="top" style="background:#C0E6FF">
+				<br></br>
+				
+							<div  style="text-align:center"  >
+							 <img src="deneme.png" height="200" width="200"  border="2" style=" border-radius:50%;"></img>
+							</div>
+							
+				
+						<h:body>
+							<br></br>
+							<br></br>
+							<br></br>
+							<li type="none">
+						<h:outputLabel  value="#{ogrenciBean.ogrenciKisiselBilgileri.gelenemail}" />
+						</li>
+				<br></br>
+						<li type="none" style="position: absolute;  left: 40px;" >
+							
+				
+				<h:commandButton action="ogrenciBilgileri" value="Özgeçmiş"  style=" background: url(person1_32.png);background-repeat:no-repeat;text-align:center;width:170px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+			
+						
+						</li>
+				<br></br>
+				
+						<li type="none" style="position: absolute;  left: 40px;top:480px;">
+						
+						
+						<h:commandButton action="OgrenciSoru" value="Yarışmalar"  style=" background: url(yarisma_32.png);background-repeat:no-repeat;text-align:center;width:170px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+						<br></br>
+						<li type="none" style="position: absolute;  left: 40px;top:530px;">
+						<h:commandButton action="teknolojiGunleri" value="Teknoloji Günleri"  style=" background: url(teknoloji_gunleri1_32.png);background-repeat:no-repeat;text-align:center;width:220px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						
+						</li>
+						<br></br><br></br>
+						<li type="none"  style="position: absolute;  left: 40px;top:585px;">
+						<h:commandButton action="mailAt" value="Firmaya Mail Gönder"  style=" background: url(mail_32.png);background-repeat:no-repeat;text-align:center;width:250px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						
+						</li>
+						<br></br><br></br><br></br>
+						<li type="none" style="position: absolute;  left: 40px;top:640px;">
+						<h:commandButton action="CalisanaMailAt" value="Çalışana Mail Gönder"  style=" background: url(mail_personel_32.png);background-repeat:no-repeat;text-align:center;width:250px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						
+						</li>
+						<br></br><br></br><br></br>
+						<li type="none" style="position: absolute;  left: 40px;top:695px;">
+						<h:commandButton action="OgrenciYorumOku" value="Firma Yorumlarını Oku"  style=" background: url(yorum_32.png);background-repeat:no-repeat;text-align:center;width:250px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						
+						</li>
+				
+				</h:body>
+				</td>
+					
+				<td id="ogrenciSag"  Valign="top"  >
+				<h2 style="font-family:sans-serif;" align="center">Çalışanların Firmalar Hakkındaki Yorumlar</h2>
+				<p:dataTable value="#{firmaCalisanBean.CalisanYorumListeleTum()}" var="sn">
+				<f:facet name="header">Yorumu Göster</f:facet>
+			
+				<p:column>
+					<f:facet name="header">E-Mail</f:facet>
+						<h:outputText value="#{sn.mail}" />
+				
+				</p:column>
+				<p:column>
+					<f:facet name="header">Firma E-Mail</f:facet>
+						<h:outputText value="#{sn.firmaEmail}" />
+				
+				</p:column>
+				
+			    <p:column>
+					<f:facet name="header">Departman</f:facet>
+						<h:outputText value="#{sn.bolum}" />
+				
+				</p:column>
+				 <p:column>
+					<f:facet name="header">Yorum</f:facet>
+						<h:outputText value="#{sn.yorum}" />
+				
+				</p:column>
+				</p:dataTable>
+		
+				
+			
+				
+				</td>
+				
+			</tr>
+	
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+				
+			
+			
+			
+				
+				
+			</table>
+		</h:form>
+	</f:view>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+<style>
+.button1{
+	text-decoration:none;
+	font-size:18px;
+	margin-left:9px;
+	display:inline-block;
+	} 
+	.uc{
+
+	
+	 border-radius: 30px; 
+	 background-color:#699DC0;
+	 font-weight: bold; 
+	 color: white;
+	 width:10%;
+	 height:5%;
+	}
+	.uc:hover {
+	color:white;
+	background-color: green;
+}
+</style>
+</h:head>
+<body>
+	<f:view>
+
+	<h:form>
+			<link href="ozellik.css" rel="stylesheet" type="text/css" />
+			<table border="1" width="1500" cellpadding="1" cellspacing="1" height="1000" align="center">
+				<div id="ustCerceve">
+					<ul id="icerik"></ul>
+					
+					<tr id="menu">
+					
+					
+				
+					<td width="500" style="background:#C0E6FF" >
+							<li align="center" type="none"  style="font-weight:bold;">FİRMA ÇALIŞAN BİLGİLERİ</li>
+						
+					
+					</td>
+					
+					
+						<td width="4500" >
+							<h:commandLink action="firmaCalisanAnasayfa" value="Anasayfa" /> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							
+					
+					</td>
+					
+					</tr>
+					
+					
+					
+					
+									
+			<tr >
+					
+				<td  Valign="top" style="background:#C0E6FF">
+				<br></br>
+				<div  style="text-align:center"  >
+							 <img src="deneme.png" height="200" width="200"  border="2" style=" border-radius:50%;"></img>
+						</div>
+						<h:body>
+						
+						
+						
+
+					<li type="none" style="position: absolute;  left: 20px;top:400px;">
+						
+						
+						<h:commandButton action="CalisanTeknolojiGunleri" value="Teknoloji Günleri"  style=" background: url(teknoloji_gunleri1_32.png);background-repeat:no-repeat;text-align:center;width:220px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+						
+					<li type="none" style="position: absolute;  left: 20px;top:450px;">
+						
+						
+						<h:commandButton action="FirmaCalisanYorum" value="Yorum Yap"  style=" background: url(yorum_32.png);background-repeat:no-repeat;text-align:center;width:180px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+				</h:body>
+				</td>
+				<td id="ogrenciSag"  Valign="top">				
+				
+				<h2 style="margin-top: none" align="left" >Kişisel Bilgileri Kaydet</h2>
+							
+			<h:panelGrid columns="2">
+			Calisan ID:<p:inputText value="#{firmaCalisanBean.firmaCalisanBilgileri.id}" disabled="true"></p:inputText> 
+			TC Kimlik Numarası: <p:inputText value="#{firmaCalisanBean.firmaCalisanBilgileri.tc}"></p:inputText><br></br>
+			Ad:<p:inputText value="#{firmaCalisanBean.firmaCalisanBilgileri.ad}"></p:inputText>
+			Soyad: <p:inputText value="#{firmaCalisanBean.firmaCalisanBilgileri.soyad}"></p:inputText>
+			E-mail: <p:inputText value="#{firmaCalisanBean.firmaCalisanBilgileri.mail}"></p:inputText>
+			Telefon: <p:inputText value="#{firmaCalisanBean.firmaCalisanBilgileri.telefon}"></p:inputText>
+			Doğum Tarihi:<p:calendar value="#{firmaCalisanBean.firmaCalisanBilgileri.dogum_tarihi}"></p:calendar>						
+			Okul: <p:inputText value="#{firmaCalisanBean.firmaCalisanBilgileri.okul}"></p:inputText>
+			Bölüm: <p:inputText value="#{firmaCalisanBean.firmaCalisanBilgileri.bolum}"></p:inputText>
+			Şirket Adı: <p:inputText value="#{firmaCalisanBean.firmaCalisanBilgileri.sirket_adi}"></p:inputText>
+			Şirket id: <p:inputText value="#{firmaCalisanBean.firmaCalisanBilgileri.sirket_id}"></p:inputText>
+			Sene: <p:inputText value="#{firmaCalisanBean.firmaCalisanBilgileri.sene}"></p:inputText>
+			Ünvan: <p:inputText value="#{firmaCalisanBean.firmaCalisanBilgileri.unvan}"></p:inputText><br></br>
+			<h:commandButton action="#{firmaCalisanBean.firmaCalisanBilgileriKaydet()}" value="Kaydet" 
+			rendered="#{firmaCalisanBean.firmaCalisanBilgileri.id==null}" class="button1 uc" style="width:220px;position: absolute;  left: 420px;"/>
+			<h:commandButton action="#{firmaCalisanBean.firmaCalisanBilgileriGuncelle()}" value="Güncelle"
+			rendered="#{firmaCalisanBean.firmaCalisanBilgileri.id!=null}" class="button1 uc" style="width:220px;position: absolute;  left: 420px;" /> 
+			</h:panelGrid>
+		
+		
+		<br></br><br></br><br></br><br></br><br></br>
+		
+				<h2 style="margin-top: none" align="left" >Kişisel Bilgileri Güncelle</h2>			
+				<p:dataTable value="#{firmaCalisanBean.firmaCalisanBilgileriListesi}" var="sn">
+
+				<f:facet name="header">Kişisel Bilgi Listesi</f:facet>
+				<p:column>
+					<f:facet name="header">Sec</f:facet>
+					<h:commandLink value="Sec">
+						<f:setPropertyActionListener value="#{sn}"
+							target="#{firmaCalisanBean.firmaCalisanBilgileri}"></f:setPropertyActionListener>
+					</h:commandLink>
+				</p:column>
+			
+			
+				<p:column>
+					<f:facet name="header">TC Kimlik Numarası:</f:facet>
+					<h:outputText value="#{sn.tc}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Ad</f:facet>
+					<h:outputText value="#{sn.ad}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Soyad</f:facet>
+					<h:outputText value="#{sn.soyad}" />
+				</p:column>
+
+				<p:column>
+					<f:facet name="header">E-mail</f:facet>
+					<h:outputText value="#{sn.mail}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Telefon</f:facet>
+					<h:outputText value="#{sn.telefon}" />
+				</p:column>
+					<p:column>
+					<f:facet name="header">Doğum Tarihi</f:facet>
+					<h:outputText value="#{sn.dogum_tarihi}" />
+				</p:column>
+					<p:column>
+					<f:facet name="header">Okul</f:facet>
+					<h:outputText value="#{sn.okul}" />
+				</p:column>
+			
+					<p:column>
+					<f:facet name="header">Bölüm</f:facet>
+					<h:outputText value="#{sn.bolum}" />
+				</p:column>
+				
+					<p:column>
+					<f:facet name="header">Şirket Adı</f:facet>
+					<h:outputText value="#{sn.sirket_adi}" />
+				</p:column>
+					<p:column>
+					<f:facet name="header">Şirket Id</f:facet>
+					<h:outputText value="#{sn.sirket_id}" />
+				</p:column>
+						
+					<p:column>
+					<f:facet name="header">Sene</f:facet>
+					<h:outputText value="#{sn.sene}" />
+				</p:column>
+					<p:column>
+					<f:facet name="header">Ünvan</f:facet>
+					<h:outputText value="#{sn.unvan}" />
+				</p:column>
+				
+				</p:dataTable>					
+									
+
+					
+										
+						</td>
+					
+				
+				
+			</tr>
+	
+
+					
+				</div>
+	
+				
+			</table>
+		</h:form>
+	</f:view>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+<style>
+.button1{
+	text-decoration:none;
+	font-size:18px;
+	margin-left:9px;
+	display:inline-block;
+	
+	
+
+	
+	} 
+	.uc{
+
+	
+	 border-radius: 30px; 
+	 background-color:#699DC0;
+	 font-weight: bold; 
+	 color: white;
+	 width:10%;
+	 height:5%;
+	}
+	.uc:hover {
+	color:white;
+	background-color: green;
+}
+</style>
+</h:head>
+<body>
+	<f:view>
+
+		<h:form>
+			<link href="ozellik.css" rel="stylesheet" type="text/css" />
+			<table border="1" width="1500" cellpadding="1" cellspacing="1" height="1000" align="center">
+				<div id="ustCerceve">
+					<ul id="icerik"></ul>
+					
+					<tr id="menu">
+					
+					
+				
+					<td width="500" style="background:#C0E6FF" >
+							<li align="center" type="none"  style="font-weight:bold;">FİRMA ÇALIŞAN BİLGİLERİ</li>
+						
+					
+					</td>
+					
+					
+						<td width="4500" >
+							<h:commandLink action="firmaCalisanAnasayfa" value="Anasayfa" /> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							
+					
+					</td>
+					
+					</tr>
+					
+					
+					
+					
+									
+			<tr >
+					
+				<td  Valign="top" style="background:#C0E6FF">
+				<br></br>
+				<div  style="text-align:center"  >
+							 <img src="deneme.png" height="200" width="200"  border="2" style=" border-radius:50%;"></img>
+						</div>
+						<h:body>
+						
+						
+						
+
+					<li type="none" style="position: absolute;  left: 20px;top:400px;">
+						
+						
+						<h:commandButton action="CalisanTeknolojiGunleri" value="Teknoloji Günleri"  style=" background: url(teknoloji_gunleri1_32.png);background-repeat:no-repeat;text-align:center;width:220px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+							<li type="none" style="position: absolute;  left: 20px;top:450px;">
+						
+						
+						<h:commandButton action="FirmaCalisanYorum" value="Yorum Yap"  style=" background: url(yorum_32.png);background-repeat:no-repeat;text-align:center;width:180px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+				</h:body>
+				</td>
+				<td id="ogrenciSag"  Valign="top">				
+				
+				<h2 style="margin-top: none" align="left" >Kişisel Bilgileri Kaydet</h2>
+							
+			<h:panelGrid columns="2">
+			Firma E-mail<p:inputText value="#{firmaCalisanBean.firmaEmail}" disabled="true" style="width:546px;"></p:inputText> 
+			Çalışan E-mail:<p:inputText value="#{firmaCalisanBean.email}" disabled="true" style="width:546px;"></p:inputText><br></br>
+			Çalışan Departman:<p:inputText value="#{firmaCalisanBean.departman}" style="width:546px;"></p:inputText>
+			Yorum:<p:inputTextarea  rows="10" cols="60" value="#{firmaCalisanBean.yorum}"  ></p:inputTextarea><br></br>
+			<h:commandButton action="#{firmaCalisanBean.YorumGuncelle()}"  class="button1 uc" style="width:547px;position: absolute;  left: 400px;" value="Yorum Yap" />
+			</h:panelGrid>
+		
+		
+		<br></br><br></br><br></br><br></br><br></br>
+		
+		<p:dataTable value="#{firmaCalisanBean.CalisanYorumListele()}" var="sn">
+				<f:facet name="header">Yorumu Göster</f:facet>
+				<p:column>
+					<f:facet name="header">Seç</f:facet>
+						<h:commandLink value="Sec" >
+							<f:setPropertyActionListener value="#{sn}" target="#{firmaCalisanBean.firmaCalisanBilgileri}" ></f:setPropertyActionListener>
+				
+						</h:commandLink>
+				
+				</p:column>
+				<p:column>
+					<f:facet name="header">E-Mail</f:facet>
+						<h:outputText value="#{sn.mail}" />
+				
+				</p:column>
+				<p:column>
+					<f:facet name="header">Firma E-Mail</f:facet>
+						<h:outputText value="#{sn.firmaEmail}" />
+				
+				</p:column>
+				
+			    <p:column>
+					<f:facet name="header">Departman</f:facet>
+						<h:outputText value="#{sn.bolum}" />
+				
+				</p:column>
+				 <p:column>
+					<f:facet name="header">Yorum</f:facet>
+						<h:outputText value="#{sn.yorum}" />
+				
+				</p:column>
+				</p:dataTable>
+		
+				
+
+					
+										
+						</td>
+					
+				
+				
+			</tr>
+	
+
+					
+				</div>
+	
+				
+			</table>
+		</h:form>
+	</f:view>
+
+</body>
+</html>

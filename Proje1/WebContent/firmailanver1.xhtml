@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+<style>
+.button1{
+	text-decoration:none;
+	font-size:18px;
+	margin-left:9px;
+	display:inline-block;
+	
+	
+
+	
+	} 
+	.uc{
+
+	
+	 border-radius: 30px; 
+	 background-color:#699DC0;
+	 font-weight: bold; 
+	 color: white;
+	 width:10%;
+	 height:5%;
+	}
+	.uc:hover {
+	color:white;
+	background-color: green;
+}
+</style>
+</h:head>
+<body>
+	<f:view>
+
+		<h:form>
+			<link href="ozellik.css" rel="stylesheet" type="text/css" />
+			<table border="1" width="1500" cellpadding="1" cellspacing="1" height="1000" align="center">
+				<div id="ustCerceve">
+					<ul id="icerik"></ul>
+					
+					<tr id="menu">
+					
+					
+					<td width="500" style="background:#C0E6FF" >
+							<li align="center" type="none"  style="font-weight:bold;">FİRMA BİLGİLERİ</li>
+						
+					
+					</td>
+					
+						<td width="4500" >
+							<h:commandLink action="firmaAnasayfa" value="Anasayfa" /> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="firmaBilgileri" value="Firma Bilgileri" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="firmaProfil" value="Firma Profili" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="firmaGelenBasvuru" value="Gelen Başvurular" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="firmailanver1" value="İlan Ver" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					
+					
+					</td>
+					
+					</tr>
+					
+					
+					
+					
+									
+			<tr >
+					
+					<td    Valign="top" style="background:#C0E6FF">
+				<br></br>
+						<div  style="text-align:center"  >
+							 <img src="deneme.png" height="200" width="200"  border="2" style=" border-radius:50%;"></img>
+						</div>
+						<h:body>
+							<br></br>
+						
+							<li type="none" style="position: absolute;  left: 20px;top:400px;">
+						
+						
+						<h:commandButton action="firmateknolojiGunleri" value="Teknoloji Günleri"  style=" background: url(teknoloji_gunleri1_32.png);background-repeat:no-repeat;text-align:center;width:220px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+							
+							
+						
+						
+					
+						
+						<br></br>
+						
+						<li type="none" style="position: absolute;  left: 20px;top:450px;">
+						
+						
+						<h:commandButton action="yarismaYap" value="Yarışma Sorusu Hazırla"  style=" background: url(yarisma_32.png);background-repeat:no-repeat;text-align:center;width:260px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+						
+							<br></br>
+						
+						<li type="none" style="position: absolute;  left: 20px;top:500px;">
+						
+						
+						<h:commandButton action="firmaCalisanKayit" value="Çalışan Kaydet"  style=" background: url(calisan1.png);background-repeat:no-repeat;text-align:center;width:200px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+						
+				
+				</h:body>
+				</td>
+				<td id="ogrenciSag"  Valign="top">				
+							<h2 style="margin-top: none">Firma Staj Oluşturma</h2>
+							<h:panelGrid columns="2" >
+							Firma Adı:<p:inputText value="#{firmaBean.ilanver1.firmaAdi}"></p:inputText>
+							Stajyer Alınacak Departman: <p:selectOneMenu value="#{firmaBean.ilanver1.stajyerDep}" style="width:220px;">
+								<f:selectItem itemValue="bilmuh" itemLabel="Bilgisayar Mühendisliği" /><br></br>
+								<f:selectItem itemValue="elktrikelektronikmuh" itemLabel="Elektrik Elektronik Mühendisliği"/><br></br>
+								<f:selectItem itemValue="mekatronikmuh" itemLabel="Mekatronik Mühendisliği"/><br></br>
+								<f:selectItem itemValue="endustriyeltasmuh" itemLabel="EndüstireyelTasarım Mühendisliği"/><br></br>
+								<f:selectItem itemValue="imalatmuh" itemLabel="İmalat Mühendisliği"/><br></br>
+								<f:selectItem itemValue="otomotivmuh" itemLabel="Otomotiv Mühendisliği"/><br></br>
+								<f:selectItem itemValue="insaatmuh" itemLabel="İnşaat Mühendisliği"/><br></br>
+								</p:selectOneMenu><br/>	
+							
+							İlgili Departmana Alınacak Stajyer Sayısı:<p:inputText value="#{firmaBean.ilanver1.stajyerSayi}"></p:inputText><br></br>
+							Staj Başlangıç Tarihi(1): <p:calendar value="#{firmaBean.ilanver1.stajAralik1}" ></p:calendar><br></br>
+							Staj Başlangıç Tarihi(2): <p:calendar value="#{firmaBean.ilanver1.stajaralik2}" ></p:calendar><br></br>
+							
+							Staj Gün  Sayısı(1): <p:inputText value="#{firmaBean.ilanver1.stajGun1}"></p:inputText><br></br>
+							Staj Gün  Sayısı(2): <p:inputText value="#{firmaBean.ilanver1.stajGun2}"></p:inputText><br></br>
+							
+							İlan Başlangıç Tarihi: <p:calendar value="#{firmaBean.ilanver1.ilanbas}" ></p:calendar><br></br>
+							İlan Bitiş Tarihi: <p:calendar value="#{firmaBean.ilanver1.ilanbit}" ></p:calendar><br></br>
+							
+							Staj Türü <p:selectOneMenu value="#{firmaBean.ilanver1.stajTur}" style="width:220px;">
+								<f:selectItem itemValue="zorunlu" itemLabel="Zorunlu" /><br></br>
+								<f:selectItem itemValue="istegebagli" itemLabel="İsteğe Bağlı"/><br></br>
+								</p:selectOneMenu><br/>
+						  <h:commandButton action="#{firmaBean.ilanKaydet()}" value="İlan Kaydet"  class="button1 uc" style="width:220px;position: absolute;  left: 550px;"/>
+							
+						
+							
+							
+							
+							
+													</h:panelGrid>
+						</td>
+					
+				
+				
+			</tr>
+	
+
+					
+				</div>
+	
+				
+			</table>
+		</h:form>
+	</f:view>
+
+</body>
+</html>

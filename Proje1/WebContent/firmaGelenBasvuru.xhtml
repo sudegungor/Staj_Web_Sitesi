@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+<style>
+.button1{
+	text-decoration:none;
+	font-size:18px;
+	margin-left:9px;
+	display:inline-block;
+	
+	
+
+	
+	} 
+	.uc{
+
+	
+	 border-radius: 30px; 
+	 background-color:#699DC0;
+	 font-weight: bold; 
+	 color: white;
+	 width:10%;
+	 height:5%;
+	}
+	.uc:hover {
+	color:white;
+	background-color: green;
+
+
+</style>
+</h:head>
+<body>
+	<f:view>
+
+		<h:form>
+			<link href="ozellik.css" rel="stylesheet" type="text/css" />
+			<table border="1" width="1500" cellpadding="1" cellspacing="1" height="1000" align="center">
+				<div id="ustCerceve">
+					<ul id="icerik"></ul>
+					
+					<tr id="menu">
+					
+					
+				<td width="500" style="background:#C0E6FF" >
+							<li align="center" type="none"  style="font-weight:bold;">FİRMA BİLGİLERİ</li>
+						
+					
+					</td>
+					
+						<td width="4500" >
+							<h:commandLink action="firmaAnasayfa" value="Anasayfa" /> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="firmaBilgileri" value="Firma Bilgileri" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="firmaProfil" value="Firma Profili" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="pass" value="Gelen Başvurular" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="firmailanver1" value="İlan Ver" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					
+					
+					</td>
+					
+					</tr>
+					
+					
+					
+					
+									
+			<tr >
+					
+						<td    Valign="top" style="background:#C0E6FF">
+				<br></br>
+						<div  style="text-align:center"  >
+							 <img src="deneme.png" height="200" width="200"  border="2" style=" border-radius:50%;"></img>
+						</div>
+						<h:body>
+							<br></br>
+						
+							<li type="none" style="position: absolute;  left: 20px;top:400px;">
+						
+						
+						<h:commandButton action="firmateknolojiGunleri" value="Teknoloji Günleri"  style=" background: url(teknoloji_gunleri1_32.png);background-repeat:no-repeat;text-align:center;width:220px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+							
+							
+						
+						
+					
+						
+						<br></br>
+						
+						<li type="none" style="position: absolute;  left: 20px;top:450px;">
+						
+						
+						<h:commandButton action="yarismaYap" value="Yarışma Sorusu Hazırla"  style=" background: url(yarisma_32.png);background-repeat:no-repeat;text-align:center;width:260px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+						
+							<br></br>
+						
+						<li type="none" style="position: absolute;  left: 20px;top:500px;">
+						
+						
+						<h:commandButton action="firmaCalisanKayit" value="Çalışan Kaydet"  style=" background: url(calisan1.png);background-repeat:no-repeat;text-align:center;width:200px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+						
+				
+				</h:body>
+				</td>
+				<td id="ogrenciSag"  Valign="top">
+				<br></br>
+				
+				
+				<br></br><br></br>
+				<p:dataTable value="#{firmaBean.StajBasvuruAra_1()}" var="sn">
+				
+				<f:facet name="header">Öğrenci Staj Bilgisi</f:facet>
+				
+				<p:column>
+					<f:facet name="header"> E-Mail</f:facet>
+						<h:outputText value="#{sn.email}" />
+				
+				</p:column>
+			    <p:column>
+					<f:facet name="header"> Firma Adı</f:facet>
+						<h:outputText value="#{sn.firmaAdi}" />
+				
+				</p:column>
+				<p:column>
+					<f:facet name="header">Staj Gün Sayısı</f:facet>
+						<h:outputText value="#{sn.stajGun}" />
+				
+				</p:column>
+						<p:column>
+					<f:facet name="header"> Staj Türü</f:facet>
+						<h:outputText value="#{sn.stajTur}" />
+				
+				</p:column>
+						<p:column>
+					<f:facet name="header">Staj Tarihi</f:facet>
+						<h:outputText value="#{sn.stajarakik}" />
+				
+				</p:column>
+			<p:column>
+					<f:facet name="header"> Stajyer Departmanı</f:facet>
+						<h:outputText value="#{sn.stajyerDep}" />
+				
+				</p:column>
+		
+				</p:dataTable>
+				<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+				
+				<b>Öğrenci Mailini giriniz: </b><h:inputText id="deneme" value="#{ogrenciBean.deneme111}"  />
+				<h:commandButton action="#{ogrenciBean.deneYaz()}" value="Ara" class="button1 uc" style="width:100px;height:30px;" />
+				
+				
+				<br></br>	<br></br>	
+				
+				
+				<p:dataTable value="#{ogrenciBean.ogrenciKisiselBilgileriFirma}" var="sn">
+				<f:facet name="header">Öğrenci Kişisel Bilgiler</f:facet>
+			
+				
+				
+				<p:column>
+					<f:facet name="header">TC Kimlik Numarası</f:facet>
+					<h:outputText value="#{sn.og_tc}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Ad</f:facet>
+					<h:outputText value="#{sn.ad}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Soyad</f:facet>
+					<h:outputText value="#{sn.soyad}" />
+				</p:column>
+
+				
+			<p:column>
+					<f:facet name="header">Doğum Tarihi</f:facet>
+					<h:outputText value="#{sn.dogum_tar}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Medeni Hal</f:facet>
+					<h:outputText value="#{sn.medeni_hal}" />
+				</p:column>
+			
+				<p:column>
+					<f:facet name="header">Yaşadığınız Şehir</f:facet>
+					<h:outputText value="#{sn.sehir}" />
+				</p:column>
+					<p:column>
+					<f:facet name="header">Yaşadığınız İlçe</f:facet>
+					<h:outputText value="#{sn.ilce}" />
+				</p:column>
+					<p:column>
+					<f:facet name="header">Yaşadığınız Adres</f:facet>
+					<h:outputText value="#{sn.adres}" />
+				</p:column>
+				
+						<p:column>
+					<f:facet name="header">Telefon</f:facet>
+					<h:outputText value="#{sn.tel_no}" />
+				</p:column>
+					<p:column>
+					<f:facet name="header" >Ehliyet</f:facet>
+					<h:outputText value="#{sn.ehliyet_bilgileri}" />
+					</p:column>
+				
+				
+				</p:dataTable>
+		
+		
+		
+		
+		<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+				
+				
+				
+			
+				
+		
+		
+		<p:dataTable value="#{ogrenciBean.ogrenciOkulBilgileriFirma}" var="sn">
+				<f:facet name="header">Öğrenci Okul Bilgi Listesi</f:facet>
+			
+		
+			
+				<p:column>
+					<f:facet name="header">Lisans Tipi</f:facet>
+					<h:outputText value="#{sn.lisans_tipi}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Üniversite Adı</f:facet>
+					<h:outputText value="#{sn.universite}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Fakülte</f:facet>
+					<h:outputText value="#{sn.fakulte}" />
+				</p:column>
+
+				<p:column>
+					<f:facet name="header">Bölüm</f:facet>
+					<h:outputText value="#{sn.bolum}" />
+				</p:column>
+			<p:column>
+					<f:facet name="header">Eğitim Durumu</f:facet>
+					<h:outputText value="#{sn.egitim_durumu}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Başlama Tarihi</f:facet>
+					<h:outputText value="#{sn.bas_tar}" />
+				</p:column>
+					<p:column>
+					<f:facet name="header">Ortalama Türü</f:facet>
+					<h:outputText value="#{sn.ort_turu}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Ortalama</f:facet>
+					<h:outputText value="#{sn.ortalama}" />
+				</p:column>
+				
+			</p:dataTable>
+				
+				
+				
+				<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+				
+				
+				
+				
+				
+			
+				<p:dataTable value="#{ogrenciBean.ogrenciSertifikaBilgileriFirma}" var="sn">
+
+				<f:facet name="header">Sertifika Listesi</f:facet>
+				
+		
+				<p:column>
+					<f:facet name="header">Sertifika Sayısı</f:facet>
+					<h:outputText value="#{sn.id}" />
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header">Sertifikanın Adı</f:facet>
+					<h:outputText value="#{sn.sertifika_adi}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Sertifikayı Veren Kurum</f:facet>
+					<h:outputText value="#{sn.sertifikayi_veren_kurum}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Sertifikanın Alınma Tarihi</f:facet>
+					<h:outputText value="#{sn.alinma_tarihi}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Sertifikanın Süresinin Bittiği Tarihi</f:facet>
+					<h:outputText value="#{sn.bitis_tarihi}" />
+				</p:column>
+					<p:column>
+					<f:facet name="header">Sertifika Açıklaması</f:facet>
+					<h:outputText value="#{sn.aciklama}" />
+				</p:column>
+				</p:dataTable>	
+				
+				
+				<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+				
+				
+				
+				
+					<p:dataTable value="#{ogrenciBean.ogrenciYabanciDilBilgileriFirma}" var="sn">
+
+				<f:facet name="header">Yabancı Dil Listesi</f:facet>
+				
+
+			
+			
+				<p:column>
+					<f:facet name="header">Dil Adı</f:facet>
+					<h:outputText value="#{sn.dil_adi}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Okuma Seviyesi</f:facet>
+					<h:outputText value="#{sn.okuma_sev}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Yazma Seviyesi</f:facet>
+					<h:outputText value="#{sn.yazma_sev}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Konusma Seviyesi</f:facet>
+					<h:outputText value="#{sn.konusma_sev}" />
+				</p:column>
+					<p:column>
+					<f:facet name="header">Dinleme Seviyesi</f:facet>
+					<h:outputText value="#{sn.dinleme_sev}" />
+				</p:column>
+				</p:dataTable>
+				
+				
+				
+				<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+				
+					<p:dataTable value="#{ogrenciBean.ogrenciBİlgisayarBilgileriFirma}" var="sn">
+
+				<f:facet name="header">Bilgisayar Bilgisi Listesi</f:facet>
+				
+			<p:column>
+					<f:facet name="header">Sec</f:facet>
+					<h:commandLink value="Sec">
+						<f:setPropertyActionListener value="#{sn}"
+							target="#{ogrenciBean.ogrenciBilgisayarBilgisi}"></f:setPropertyActionListener>
+					</h:commandLink>
+				</p:column>
+				
+			
+				<p:column>
+					<f:facet name="header">Bilgisayar Bilgisi Adı</f:facet>
+					<h:outputText value="#{sn.pc_bilgisi_adi}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Bilgisayar Bilgisi Seviyesi</f:facet>
+					<h:outputText value="#{sn.pc_bilgisi_seviyesi}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Bilgisayar Bilgisi Açıklaması</f:facet>
+					<h:outputText value="#{sn.pc_bilgisi_aciklamasi}" />
+				</p:column>
+				
+				</p:dataTable>
+				
+							
+						
+						</td>
+					
+				
+				
+			</tr>
+	
+
+					
+				</div>
+	
+				
+			</table>
+		</h:form>
+	</f:view>
+
+</body>
+</html>

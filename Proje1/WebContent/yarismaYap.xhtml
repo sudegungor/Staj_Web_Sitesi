@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+<style>
+.button1{
+	text-decoration:none;
+	font-size:18px;
+	margin-left:9px;
+	display:inline-block;
+	
+	
+
+	
+	} 
+	.uc{
+
+	
+	 border-radius: 30px; 
+	 background-color:#699DC0;
+	 font-weight: bold; 
+	 color: white;
+	 width:10%;
+	 height:5%;
+	}
+	.uc:hover {
+	color:white;
+	background-color: green;
+}
+</style>
+</h:head>
+<body>
+	<f:view>
+
+		<h:form>
+			<link href="ozellik.css" rel="stylesheet" type="text/css" />
+			<table border="1" width="1500" cellpadding="1" cellspacing="1" height="1000" align="center">
+				<div id="ustCerceve">
+					<ul id="icerik"></ul>
+					
+					<tr id="menu">
+					
+					
+				
+				
+						<td width="500" style="background:#C0E6FF" >
+							<li align="center" type="none"  style="font-weight:bold;">FİRMA BİLGİLERİ</li>
+						
+					
+					</td>
+					
+						<td width="4500" >
+							<h:commandLink action="firmaAnasayfa" value="Anasayfa" /> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="firmaBilgileri" value="Firma Bilgileri" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="firmaProfil" value="Firma Profili" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="pass" value="Gelen Başvurular" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="firmailanver1" value="İlan Ver" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					
+					
+					</td>
+					
+					</tr>
+					
+					
+					
+					
+									
+			<tr >
+					
+				<td    Valign="top" style="background:#C0E6FF">
+				<br></br>
+						<div  style="text-align:center"  >
+							 <img src="deneme.png" height="200" width="200"  border="2" style=" border-radius:50%;"></img>
+						</div>
+						<h:body>
+							<br></br>
+						
+							<li type="none" style="position: absolute;  left: 20px;top:400px;">
+						
+						
+						<h:commandButton action="firmateknolojiGunleri" value="Teknoloji Günleri"  style=" background: url(teknoloji_gunleri1_32.png);background-repeat:no-repeat;text-align:center;width:220px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+							
+							
+						
+						
+					
+						
+						<br></br>
+						
+						<li type="none" style="position: absolute;  left: 20px;top:450px;">
+						
+						
+						<h:commandButton action="yarismaYap" value="Yarışma Sorusu Hazırla"  style=" background: url(yarisma_32.png);background-repeat:no-repeat;text-align:center;width:260px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+							<br></br>
+						
+						<li type="none" style="position: absolute;  left: 20px;top:500px;">
+						
+						
+						<h:commandButton action="firmaCalisanKayit" value="Çalışan Kaydet"  style=" background: url(calisan1.png);background-repeat:no-repeat;text-align:center;width:200px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+				
+				</h:body>
+				</td>
+				
+				
+				
+				<td id="ogrenciSag"  Valign="top"  >
+				
+				<h:panelGrid columns="2">
+				<b style="font-size: 20px;position: absolute;left: 300px;top: 150px; ">Firma Adı:</b> <p:inputText value="#{firmaBean.yarismaSorulari.firmaAdi}" style="position: absolute;left: 618px;top: 150px;"></p:inputText>
+				<br></br>
+				<br></br>
+				<br></br>
+				<div  style="text-align:center">
+				<p></p>
+				<b style="font-size: 20px;position: absolute;left: 300px;top: 200px; ">Soru:</b><p:inputTextarea value="#{firmaBean.yarismaSorulari.soru}" style="position: absolute;left: 618px;top: 190px;" rows="3" cols="22" ></p:inputTextarea>
+				<br></br> <br></br><br></br>
+				
+				<b style="font-size: 20px;">Şıkları Giriniz:</b>
+				<p></p>
+				<br></br> <br></br><br></br> <br></br> <br></br> 
+				
+				
+				<p:inputText value="#{firmaBean.yarismaSorulari.a}" style="position: absolute;left: 618px;top: 310px;"></p:inputText> <h:graphicImage value="/a32.png"  style="position: absolute;left: 560px;top: 315px;" />
+				
+				<p:inputText value="#{firmaBean.yarismaSorulari.b}" style="position: absolute;left: 618px;top: 360px;"></p:inputText> <h:graphicImage value="/b32.png"  style="position: absolute;left: 560px;top: 360px;" />
+				
+				<p:inputText value="#{firmaBean.yarismaSorulari.c}" style="position: absolute;left: 618px;top: 405px;"></p:inputText> <h:graphicImage value="/bc32.png"  style="position: absolute;left: 560px;top: 405px;" />
+				
+				<p:inputText value="#{firmaBean.yarismaSorulari.d}" style="position: absolute;left: 618px;top: 450px;"></p:inputText> <h:graphicImage value="/d32.png"  style="position: absolute;left: 560px;top: 450px;" /><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR>
+				<br></br>
+				
+				<ul style="position: absolute;left: 260px;top: 520px;"><b style="font-size: 20px;">Doğru Seçeneği Seçiniz:</b></ul>
+				
+				<p:selectOneRadio value="#{firmaBean.yarismaSorulari.dogruCevap}" >
+								<f:selectItem itemLabel="A)" itemValue="a" />
+								<f:selectItem itemLabel="B)" itemValue="b" />
+								<f:selectItem itemLabel="C)" itemValue="c" />
+								<f:selectItem itemLabel="D)" itemValue="d" />
+								</p:selectOneRadio>
+								
+				
+				
+				
+				</div> <br></br> <br></br><br></br> <br></br><br></br> <br></br><br></br>
+				<h:commandButton action="#{firmaBean.yarismaSorusuKaydet()}" value="Kaydet"  class="button1 uc" style="width:220px;position: absolute; top: 630px; left: 290px;"/> <br></br><br></br><br></br><br></br><br></br><br></br>
+				
+				</h:panelGrid>
+				
+				
+				</td>
+				
+				
+				
+			</tr>
+	
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+				
+			
+			
+			
+				
+				
+			</table>
+		</h:form>
+	</f:view>
+
+</body>
+</html>

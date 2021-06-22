@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+<style>
+.button1{
+	text-decoration:none;
+	font-size:18px;
+	margin-left:9px;
+	display:inline-block;
+	
+	
+
+	
+	} 
+	.uc{
+
+	
+	 border-radius: 30px; 
+	 background-color:#699DC0;
+	 font-weight: bold; 
+	 color: white;
+	 width:10%;
+	 height:5%;
+	}
+	.uc:hover {
+	color:white;
+	background-color: green;
+}
+</style>
+</h:head>
+<body>
+	<f:view>
+
+		<h:form>
+			<link href="ozellik.css" rel="stylesheet" type="text/css" />
+			<table border="1" width="1500" cellpadding="1" cellspacing="1" height="1000" align="center">
+				<div id="ustCerceve">
+					<ul id="icerik"></ul>
+					
+					<tr id="menu">
+					
+					
+				
+					<td width="500" style="background:#C0E6FF" >
+							<li align="center" type="none"  style="font-weight:bold;">BİLGİLER</li>
+						
+					
+					</td>
+					
+						<td width="4500" >
+							<h:commandLink action="ogrenciAnasayfa" value="Anasayfa" /> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="ogrenciProfil" value="Profilim" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="ogrenciBasvurularim" value="Başvurularım" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="ogrenciFirmaGor" value="İlanlar" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="ogrenciFirmaListele" value="Firmalar" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					
+					</td>
+					
+					</tr>
+					
+					
+					
+					
+									
+			<tr >
+				<td  Valign="top" style="background:#C0E6FF">
+				<br></br>
+				
+							<div  style="text-align:center"  >
+							 <img src="deneme.png" height="200" width="200"  border="2" style=" border-radius:50%;"></img>
+							</div>
+							
+				
+						<h:body>
+							<br></br>
+							<br></br>
+							<br></br>
+							<li type="none">
+						<h:outputLabel  value="#{ogrenciBean.ogrenciKisiselBilgileri.gelenemail}" />
+						</li>
+				<br></br>
+						<li type="none" style="position: absolute;  left: 40px;" >
+							
+				
+				<h:commandButton action="ogrenciBilgileri" value="Özgeçmiş"  style=" background: url(person1_32.png);background-repeat:no-repeat;text-align:center;width:170px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+			
+						
+						</li>
+				<br></br>
+				
+						<li type="none" style="position: absolute;  left: 40px;top:480px;">
+						
+						
+						<h:commandButton action="OgrenciSoru" value="Yarışmalar"  style=" background: url(yarisma_32.png);background-repeat:no-repeat;text-align:center;width:170px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+						<br></br>
+						<li type="none" style="position: absolute;  left: 40px;top:530px;">
+						<h:commandButton action="teknolojiGunleri" value="Teknoloji Günleri"  style=" background: url(teknoloji_gunleri1_32.png);background-repeat:no-repeat;text-align:center;width:220px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						
+						</li>
+						<br></br><br></br>
+						<li type="none"  style="position: absolute;  left: 40px;top:585px;">
+						<h:commandButton action="mailAt" value="Firmaya Mail Gönder"  style=" background: url(mail_32.png);background-repeat:no-repeat;text-align:center;width:250px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						
+						</li>
+						<br></br><br></br><br></br>
+						<li type="none" style="position: absolute;  left: 40px;top:640px;">
+						<h:commandButton action="CalisanaMailAt" value="Çalışana Mail Gönder"  style=" background: url(mail_personel_32.png);background-repeat:no-repeat;text-align:center;width:250px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						
+						</li>
+							<br></br><br></br><br></br>
+						<li type="none" style="position: absolute;  left: 40px;top:695px;">
+						<h:commandButton action="OgrenciYorumOku" value="Firma Yorumlarını Oku"  style=" background: url(yorum_32.png);background-repeat:no-repeat;text-align:center;width:250px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						
+						</li>
+				
+				
+				</h:body>
+				</td>
+				<td id="ogrenciSag"  Valign="top"  >
+				<br></br>
+			
+				<br></br><br></br>
+				
+				<p:dataTable value="#{ogrenciBean.ogrenciKisiselBilgileriListesi}" var="sn">
+
+				<f:facet name="header">Öğrenci Kişisel Bilgi Listesi</f:facet>
+				<p:column>
+					<f:facet name="header">Sec</f:facet>
+					<h:commandLink value="Sec">
+						<f:setPropertyActionListener value="#{sn}"
+							target="#{ogrenciBean.ogrenciKisiselBilgileri}"></f:setPropertyActionListener>
+					</h:commandLink>
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header">TC Kimlik Numarası</f:facet>
+					<h:outputText value="#{sn.og_tc}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Ad</f:facet>
+					<h:outputText value="#{sn.ad}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Soyad</f:facet>
+					<h:outputText value="#{sn.soyad}" />
+				</p:column>
+
+				<p:column>
+					<f:facet name="header">E-mail</f:facet>
+					<h:outputText value="#{sn.email}" />
+				</p:column>
+			<p:column>
+					<f:facet name="header">Doğum Tarihi</f:facet>
+					<h:outputText value="#{sn.dogum_tar}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Doğum Yeri</f:facet>
+					<h:outputText value="#{sn.dogum_yer}" />
+				</p:column>
+					<p:column>
+					<f:facet name="header">Nüfusa Kayıtlı Olduğu İl</f:facet>
+					<h:outputText value="#{sn.nufus_kayit_yeri}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Medeni Hal</f:facet>
+					<h:outputText value="#{sn.medeni_hal}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Cinsiyet</f:facet>
+					<h:outputText value="#{sn.cinsiyet}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Yaşadığınız Şehir</f:facet>
+					<h:outputText value="#{sn.sehir}" />
+				</p:column>
+					<p:column>
+					<f:facet name="header">Yaşadığınız İlçe</f:facet>
+					<h:outputText value="#{sn.ilce}" />
+				</p:column>
+					<p:column>
+					<f:facet name="header">Yaşadığınız Adres</f:facet>
+					<h:outputText value="#{sn.adres}" />
+				</p:column>
+				
+						<p:column>
+					<f:facet name="header">Telefon</f:facet>
+					<h:outputText value="#{sn.tel_no}" />
+				</p:column>
+					<p:column>
+					<f:facet name="header">Ehliyet</f:facet>
+					<h:outputText value="#{sn.ehliyet_bilgileri}" />
+					</p:column>
+			
+			</p:dataTable>
+			<h3>Kişisel Bilgi Güncelle Ekranı</h3>
+			
+			<h:panelGrid columns="2">
+			
+			TC Kimlik Numaranız:<p:inputText value="#{ogrenciBean.ogrenciKisiselBilgileri.og_tc}"></p:inputText><br></br>
+			Ad:<p:inputText value="#{ogrenciBean.ogrenciKisiselBilgileri.ad}"></p:inputText><br></br>
+			Soyad:<p:inputText value="#{ogrenciBean.ogrenciKisiselBilgileri.soyad}"></p:inputText><br></br>	
+			E-mail:<p:inputText value="#{ogrenciBean.ogrenciKisiselBilgileri.email}" disabled="true" ></p:inputText><br></br>
+			Doğum Tarihi:<p:calendar value="#{ogrenciBean.ogrenciKisiselBilgileri.dogum_tar}"></p:calendar>
+			
+			Doğum Yeri: <p:selectOneMenu value="#{ogrenciBean.ogrenciKisiselBilgileri.dogum_yer}"  style="width:220px;">
+								<f:selectItem itemValue="Ankara" itemLabel="Ankara" />
+								<f:selectItem itemValue="Kayseri" itemLabel="Kayseri"/>
+							</p:selectOneMenu><br/>
+	       Nüfusa Kayıtlı Olduğu İl: <p:selectOneMenu value="#{ogrenciBean.ogrenciKisiselBilgileri.nufus_kayit_yeri}"  style="width:220px;">
+								<f:selectItem itemValue="Ankara" itemLabel="Ankara" />
+								<f:selectItem itemValue="Kayseri" itemLabel="Kayseri"/>
+							</p:selectOneMenu><br/>
+			
+			Medeni Hal: <p:selectOneRadio value="#{ogrenciBean.ogrenciKisiselBilgileri.medeni_hal}">
+								<f:selectItem itemValue="Bekar" itemLabel="Bekar" />
+								<f:selectItem itemValue="Evli" itemLabel="Evli"/>
+						</p:selectOneRadio>
+			
+			Cinsiyet: <p:selectOneRadio value="#{ogrenciBean.ogrenciKisiselBilgileri.cinsiyet}">
+								<f:selectItem itemValue="erkek" itemLabel="Erkek" />
+								<f:selectItem itemValue="kadin" itemLabel="Kadın"/>
+						</p:selectOneRadio>
+			
+			Yaşadığınız Şehir: <p:selectOneMenu value="#{ogrenciBean.ogrenciKisiselBilgileri.sehir}" 
+							valueChangeListener="#{ogrenciBean.ilceYukle}" onchange="submit()"  style="width:220px;">
+								<f:selectItem itemValue="Adana" itemLabel="Adana" />
+								<f:selectItem itemValue="Ankara" itemLabel="Ankara"  />
+								<f:selectItem itemValue="Istanbul" itemLabel="Istanbul" />
+								<f:selectItem itemValue="Kayseri"  itemLabel="Kayseri"/>
+							</p:selectOneMenu><br/>
+		   Yaşadığınız İlçe: <p:selectOneMenu value="#{ogrenciBean.ogrenciKisiselBilgileri.ilce}"  style="width:220px;">
+								<f:selectItems value="#{ogrenciBean.ilceListesi}"   />
+								
+							</p:selectOneMenu><br/>
+			
+			
+			Yaşadığınız Adres:<p:inputText value="#{ogrenciBean.ogrenciKisiselBilgileri.adres}"></p:inputText><br></br>		
+			Telefon:<p:inputText value="#{ogrenciBean.ogrenciKisiselBilgileri.tel_no}"></p:inputText><br></br>
+			
+			Ehliyet: <p:selectOneMenu value="#{ogrenciBean.ogrenciKisiselBilgileri.ehliyet_bilgileri}" style="width:220px;">
+								<f:selectItem itemValue="yok" itemLabel="Yok" />
+								<f:selectItem itemValue="M" itemLabel="M"/>
+								<f:selectItem itemValue="A1" itemLabel="A1"/>
+							</p:selectOneMenu><br></br>		
+			<h:commandButton action="#{ogrenciBean.ogrenciKisiselBilgileriGuncelle()}" value="Kisisel Bilgi Guncelle" class="button1 uc" style="width:220px;position: absolute;  left: 450px;"/>
+		
+			</h:panelGrid>				
+				<br></br>
+				<br></br><br></br><br></br>
+				
+				
+				<p:dataTable value="#{ogrenciBean.ogrenciOkulListesiOzel}" var="sn">
+				<f:facet name="header">Öğrenci Okul Bilgi Listesi</f:facet>
+				<p:column>
+					<f:facet name="header">Sec</f:facet>
+					<h:commandLink value="Sec">
+						<f:setPropertyActionListener value="#{sn}"
+							target="#{ogrenciBean.ogrenciOkulBilgileri}"></f:setPropertyActionListener>
+					</h:commandLink>
+				</p:column>
+				<p:column>
+					<f:facet name="header">E-Mail</f:facet>
+					<h:outputText value="#{sn.email}" />
+				</p:column>
+			
+				<p:column>
+					<f:facet name="header">Lisans Tipi</f:facet>
+					<h:outputText value="#{sn.lisans_tipi}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Üniversite Adı</f:facet>
+					<h:outputText value="#{sn.universite}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Fakülte</f:facet>
+					<h:outputText value="#{sn.fakulte}" />
+				</p:column>
+
+				<p:column>
+					<f:facet name="header">Bölüm</f:facet>
+					<h:outputText value="#{sn.bolum}" />
+				</p:column>
+			<p:column>
+					<f:facet name="header">Eğitim Durumu</f:facet>
+					<h:outputText value="#{sn.egitim_durumu}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Başlama Tarihi</f:facet>
+					<h:outputText value="#{sn.bas_tar}" />
+				</p:column>
+					<p:column>
+					<f:facet name="header">Ortalama Türü</f:facet>
+					<h:outputText value="#{sn.ort_turu}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Ortalama</f:facet>
+					<h:outputText value="#{sn.ortalama}" />
+				</p:column>
+				
+			</p:dataTable>
+			
+			<h3>Okul Bilgi Güncelle Ekranı</h3>
+			
+			<h:panelGrid columns="2">
+			E-mail<p:inputText value="#{ogrenciBean.ogrenciOkulBilgileri.email}"  disabled="true"></p:inputText><br></br>
+			Lisans Tipi:<p:inputText value="#{ogrenciBean.ogrenciOkulBilgileri.lisans_tipi}"></p:inputText><br></br>
+			Üniversite Adı:<p:inputText value="#{ogrenciBean.ogrenciOkulBilgileri.universite}"></p:inputText><br></br>
+			Fakülte:<p:inputText value="#{ogrenciBean.ogrenciOkulBilgileri.fakulte}"></p:inputText><br></br>	
+			Bölüm:<p:inputText value="#{ogrenciBean.ogrenciOkulBilgileri.bolum}"></p:inputText><br></br>
+			Eğitim Durumu:<p:inputText value="#{ogrenciBean.ogrenciOkulBilgileri.egitim_durumu}"></p:inputText><br></br>
+			Başlama Tarihi:<p:calendar value="#{ogrenciBean.ogrenciOkulBilgileri.bas_tar}"></p:calendar>
+			Ortalama Türü:<p:inputText value="#{ogrenciBean.ogrenciOkulBilgileri.ort_turu}"></p:inputText><br></br>
+			Ortalama:<p:inputText value="#{ogrenciBean.ogrenciOkulBilgileri.ortalama}"></p:inputText>	<br></br>	
+				
+			<h:commandButton action="#{ogrenciBean.ogrenciOkulBilgileriGuncelle()}" value="Okul Bilgi Guncelle" class="button1 uc" style="width:220px;position: absolute;  left: 380px;"/><br></br>
+			</h:panelGrid>				
+				<br></br>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				</td>
+				
+			</tr>
+	
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+				
+			
+			
+			
+				
+				
+			</table>
+		</h:form>
+	</f:view>
+
+</body>
+</html>

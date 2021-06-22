@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+#ustCerceve {
+	background: #C0E6FF;
+	margin: auto;
+	height: 75px;
+	width:1500px;
+	
+}
+#ustCerceveKucuk {
+	background: #C0E6FF;
+	/*margin: auto;*/
+	height: 90px;
+	width:15000px;
+	
+}
+#sagIcerik {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #C0E6FF;
+	background-color: #C0E6FF;
+	float: left;
+	height: 35px;
+	width: 900px;
+	
+	
+	list-style-type: square;
+	
+}
+#bosluk{
+	height: 5px;
+	width: 1500;
+}
+#ortaBosluk{
+	height: 35px;
+	width: 100;
+}
+#solIcerik {
+	height: 35px;
+	width: 500px;
+	background: #C0E6FF;
+	
+}
+#solAltIcerik{
+    background: #C0E6FF;
+	height:5000;
+	width: 50px;
+}
+#solMenu{
+	background: #C0E6FF;
+	height:5000;
+	width: 5px;
+}
+#ortaAltIcerik{
+	height:5000;
+	width: 100px;
+}
+#sagAltIcerik{
+	height:5000;
+	width: 900px;
+	background:#d6d3d6;
+}
+#logo{
+	height: 75px;
+	width:500px;
+	float: left;
+}
+#yazi{
+	height: 75px;
+	width:900px;
+	float: rigth;
+	
+}
+#icerik {
+	background-image: url(banner3.png);
+	height: 70px;
+	width:500px;
+}
+
+#textOz{
+	
+	float: right;
+}
+#buton{
+	width:100px;
+}
+.textSag{
+
+	position: absolute;
+    left: 700px;
+    top: 150px;
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+}
+#giris{
+
+	width: 800px;
+	height: 600px; 
+	float:left;
+	background-color: white;
+
+  	border-color: black;
+}
+
+#kisiselBilgi{
+	height: 35px;
+	width: 1500px;
+	background: #C0E6FF;
+}
+#sayfaBoyut{
+	   background-attachment: fixed;
+       background-size: 70%;
+}
+#anacerceve{
+	/*
+	width: 1030px;
+	margin-left: auto;
+	margin-right: auto;
+	margin: auto;
+	height: 726px;
+	background:none;
+	background-size: cover;
+	color: #f39c12;
+	margin: auto;
+	height:auto;	
+	width:100%;
+	border: thin solid #000000;
+		
+	position: relative;
+	background-color: black;
+	width: 100%;
+	height: 100px;
+	top:-150px;
+	padding: 0px 5px 0px 5px;
+	margin-left: -5px;*/
+	
+	width:1000px;
+	margin:0 auto; 
+}
+#menu {
+	height: 35px;
+	width: 1500px;
+	background: #C0E6FF;
+	
+}
+#ogrenciSag{
+	height:5000;
+	width: 900px;
+	background:#efedef;
+	
+}
+
+.a:hover{ 
+	color:red; 
+    text-decoration:none; 
+    }
+
+.button {
+
+  background-color: #f4511e;
+
+  border: none;
+
+  color: white;
+
+  padding: 16px 32px;
+
+  text-align: center;
+
+  font-size: 16px;
+
+  margin: 4px 2px;
+
+  opacity: 0.6;
+
+  transition: 0.3s;
+
+  display: inline-block;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.button:hover {opacity: 1}

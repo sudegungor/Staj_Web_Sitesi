@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head></h:head>
+<body>
+	<f:view>
+
+		<h:form>
+			<link href="ozellik.css" rel="stylesheet" type="text/css" />
+			<table border="1" width="1500" cellpadding="1" cellspacing="1" height="1000" align="center">
+				<div id="ustCerceve">
+					<ul id="icerik"></ul>
+					
+					<tr id="menu">
+					
+					
+				
+					<td width="500" style="background:#C0E6FF"  >
+							<li align="center" type="none" style="font-weight:bold;" >BİLGİLER</li>
+						
+					
+					</td>
+					
+						<td width="4500" >
+							<h:commandLink action="ogrenciAnasayfa" value="Anasayfa" /> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="ogrenciProfil" value="Profilim" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="ogrenciBasvurularim" value="Başvurularım" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="ogrenciFirmaGor" value="İlanlar" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="ogrenciFirmaListele" value="Firmalar" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					
+					</td>
+					
+					</tr>
+					
+					
+					
+					
+									
+			<tr >
+					
+				<td  Valign="top" style="background:#C0E6FF">
+				<br></br>
+						<div  style="text-align:center"  >
+							 <img src="deneme.png" height="200" width="200"  border="2" style=" border-radius:50%;"></img>
+						</div>
+				
+				
+				
+				
+				<h:body>
+							<br></br>
+							<br></br>
+							<br></br>
+							<li type="none">
+						<h:outputLabel  value="#{ogrenciBean.ogrenciKisiselBilgileri.gelenemail}" />
+						</li>
+				<br></br>
+						<li type="none" style="position: absolute;  left: 40px;" >
+							
+				
+				<h:commandButton action="ogrenciBilgileri" value="Özgeçmiş"  style=" background: url(person1_32.png);background-repeat:no-repeat;text-align:center;width:170px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+			
+						
+						</li>
+				<br></br>
+				
+						<li type="none" style="position: absolute;  left: 40px;top:480px;">
+						
+						
+						<h:commandButton action="OgrenciSoru" value="Yarışmalar"  style=" background: url(yarisma_32.png);background-repeat:no-repeat;text-align:center;width:170px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+						<br></br>
+						<li type="none" style="position: absolute;  left: 40px;top:530px;">
+						<h:commandButton action="teknolojiGunleri" value="Teknoloji Günleri"  style=" background: url(teknoloji_gunleri1_32.png);background-repeat:no-repeat;text-align:center;width:220px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						
+						</li>
+						<br></br><br></br>
+						<li type="none"  style="position: absolute;  left: 40px;top:585px;">
+						<h:commandButton action="mailAt" value="Firmaya Mail Gönder"  style=" background: url(mail_32.png);background-repeat:no-repeat;text-align:center;width:250px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						
+						</li>
+						<br></br><br></br><br></br>
+						<li type="none" style="position: absolute;  left: 40px;top:640px;">
+						<h:commandButton action="CalisanaMailAt" value="Çalışana Mail Gönder"  style=" background: url(mail_personel_32.png);background-repeat:no-repeat;text-align:center;width:250px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						
+						</li>
+							<br></br><br></br><br></br>
+						<li type="none" style="position: absolute;  left: 40px;top:695px;">
+						<h:commandButton action="OgrenciYorumOku" value="Firma Yorumlarını Oku"  style=" background: url(yorum_32.png);background-repeat:no-repeat;text-align:center;width:250px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						
+						</li>
+				
+				
+				</h:body>
+				</td>
+					
+				<td id="ogrenciSag"  Valign="top" style=" height: 450px; overflow-x: hidden; overflow-y: scroll;"  >
+				
+				
+				<div style="font-family:sans-serif;position: absolute; left: 770px; top: 150px;  "><p:imageCropper image="aselsan1.png" height="70" width="50"></p:imageCropper></div> <br></br>
+				
+				<p></p><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><h4 style="font-family:sans-serif;position: absolute; left: 427px; top: 330px;" >Aselsan Hakkında</h4><p></p>
+				&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+				Türk Silahlı Kuvvetleri'nin haberleşme ihtiyaçlarının milli imkanlarla karşılanması için 1975 yılında kurulan ASELSAN; Türk Silahlı Kuvvetlerini Güçlendirme Vakfı'na (TSKGV) bağlı bir anonim şirkettir. ASELSAN hisselerinin %74,20'si TSKGV'ye aittir, %25,70'lik kısım ise Borsa İstanbul'da (BİST) işlem görmektedir.
+Türkiye'nin en büyük savunma elektroniği kuruluşu olan ASELSAN; başta Türk Silahlı Kuvvetleri olmak üzere yurtiçi ve yurtdışı ihtiyaç makamlarının, haberleşme ve bilgi teknolojileri, radar ve elektronik harp, elektro-optik, aviyonik, insansız sistemler, kara, deniz ve silah sistemleri, hava savunma ve füze sistemleri, komuta kontrol sistemleri, 
+ulaştırma, güvenlik, trafik, 
+otomasyon ve sağlık teknolojilerine yönelik ihtiyaçlarını karşılayabilecek çok geniş bir ürün yelpazesine sahip bulunmaktadır.
+ ASELSAN bugün, özgün ürünlerini ihraç eden, dünyanın ilk 100 savunma sanayi şirketi (Defense News Top 100) listesinde yer alan, yerel kuruluşlar ile işbirliği modelleri kurgulayarak uluslararası pazarlarda ortaklıklar kuran, yatırım yapan bir marka haline gelmiştir.
+ASELSAN, vizyonundaki teknoloji vurgusu ile "Küresel pazarda yarattığı değerler ile sürdürülebilir büyümesini koruyan, rekabet gücü ile tercih edilen, stratejik bir ortak gibi güven duyulan, çevreye ve insana duyarlı bir milli teknoloji firması olmak" hedefini benimsemiştir.
+Bu başarının kilit faktörlerinden olan 6.000'i aşkın çalışanı bünyesinde yer alan nitelikli mühendislik kadrosu ile ASELSAN, yıllık cirosunun ortalama %7'sini, kendi özkaynakları ile finanse edilen AR-GE faaliyetlerine ayırmaktadır.
+				<br></br>
+				<a href="https://www.aselsan.com.tr/">Aselsan Web Sayfası İçin Tıklayınız..</a> <br></br><br></br><br></br><br></br><br></br><br></br>
+				
+			
+				<div style="font-family:sans-serif;position: absolute; left: 770px; top: 600px;"><p:imageCropper image="havelsan1.png" height="70" width="50"></p:imageCropper></div> <br></br>
+				<p></p><br></br><br></br><br></br><br></br><br></br><br></br><br></br><h4 style="font-family:sans-serif; position: absolute; left: 427px; top: 790px;" >Havelsan Hakkında</h4><p></p>
+				&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+				
+				HAVELSAN, milletimizin öz sermayesi ile 1982’de kurulmuş, lider teknoloji firmasıdır. HAVELSAN, 
+				hem yurt içinde hem yurt dışında askeri, kamu ve özel sektör için özgün sistemler geliştiren, günümüzün 
+				en son teknolojileri ile akıllı çözümler sunan Türkiye'nin entegratör şirketidir.
+
+<br></br>		
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+
+<br></br>			
+HAVELSAN’ın dört ana faaliyet alanı;
+
+
+
+<br></br>
+<br></br>			
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+	
+			
+HAVELSAN, Hava ve Deniz Kuvvetlerimiz için komuta kontrol ve savunma teknolojileri üretiminin yanı
+ sıra her türlü KARA, DENİZ, HAVA platformu için yerli katkı oranı yüksek simülatörler sağlamaktadır. 
+ Seçim sistemleri, tapu kadastro işlemleri ve Ulusal Yargı ağı gibi projeler ile HAVELSAN, ülkemizin en önemli 
+ e-devlet dönüşüm firmasıdır. Aynı zamanda HAVELSAN, tasarladığı ve ürettiği ülke ve siber güvenlik sistemleri ile 
+kesintisiz, güvenli ve güvenilir hizmetin de çözüm ortağıdır.<br></br>
+	<a href="https://www.havelsan.com.tr/">Havelsan Web Sayfası İçin Tıklayınız..</a> <br></br><br></br><br></br><br></br><br></br><br></br>
+	<br></br><br></br><br></br>
+	
+	
+	<div style="font-family:sans-serif;position: absolute; left: 810px; top: 1080px;"><p:imageCropper image="roketsan1.png" height="80" width="60" ></p:imageCropper></div> <br></br>
+							
+		<p></p><br></br><br></br><br></br><br></br><br></br><h4 style="font-family:sans-serif; left: 427px; top: 1250px; position: absolute;" >Roketsan Hakkında</h4><p></p>
+				&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;		
+Ülkemizin geleceği için özgün, güvenilir ve çığır açan roket ve füze çözümlerinin lideri 
+olmak vizyonuyla çalışmalarını devam ettiren Roketsan, Savunma Sanayii İcra Komitesi kararı 
+ile 14 Haziran 1988 tarihinde kurulmuştur.
+<br></br><br></br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;		
+Özgün ürünleri ve tasarımlarıyla dünyanın en büyük 100 savunma sanayi şirketi (Defense News Top 100) 
+listesinde yer alan Roketsan, başta Türk Silahlı Kuvvetleri olmak üzere dost ve müttefik ülkelere de hizmet etmek 
+amacıyla farklı özelliklerdeki roket, füze, güdümlü mühimmat ve bunların fırlatıldığı silah sistemlerini, roket yakıtlarını,
+ arayıcı başlıklarını, güdüm ve kontrol sistemlerini, yazılımlarını, tapalarını, harp başlıklarını, mekanik aksamlarını üretmek,
+  bu sistemlerin kara, hava, deniz ve denizaltı platformlarına entegrasyonunu yapmak, bina, araç ve tankların korunması için balistik 
+  koruma sistemlerini üretmek, satışını gerçekleştirdiği ürünler için satış sonrası hizmetlerini vermek ve uydu fırlatma sistemleri
+   geliştirmek çerçevesinde faaliyetlerini Ankara’da yürütmektedir.
+
+<br></br><br></br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;		
+3.000’in üzerinde çalışanı ile Türkiye’nin en büyük 
+teknoloji ordusu olmayı hedefleyen Roketsan, 1.700’ün üzerinde mühendis ve kendi öz 
+kaynakları ile finanse ettiği Ar-Ge çalışmalarıyla ülkemize ve milletimize özgün tasarımlar ve 
+ürünler geliştirmeye devam etmektedir.<br></br>
+<a href="https://www.roketsan.com.tr/">Roketsan Web Sayfası İçin Tıklayınız..</a> <br></br><br></br><br></br><br></br><br></br><br></br>
+				
+
+
+				
+				</td>
+				
+			</tr>
+	
+					
+					
+				</div>
+				
+			</table>
+		</h:form>
+	</f:view>
+
+</body>
+</html>

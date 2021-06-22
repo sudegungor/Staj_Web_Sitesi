@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#anasayfa.xhtml" PATH="/anasayfa.xhtml"
+  SHAPE="72,176,50,153" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#anasayfa.xhtml:0" NAME="item"
+   PATH="/anasayfa.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cv::#cv.xhtml" NAME="output"
+    PATH="/cv.xhtml" TARGET="rules:#cv.xhtml" TITLE="cv" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="stajDuyuru::#stajDuyuru.xhtml"
+    NAME="output1" PATH="/stajDuyuru.xhtml"
+    TARGET="rules:#stajDuyuru.xhtml" TITLE="stajDuyuru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaGiris::#firmaGiris.xhtml"
+    NAME="output2" PATH="/firmaGiris.xhtml"
+    TARGET="rules:#firmaGiris.xhtml" TITLE="firmaGiris" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciBilgileri::#ogrenciBilgileri.xhtml"
+    NAME="output3" PATH="/ogrenciBilgileri.xhtml"
+    TARGET="rules:#ogrenciBilgileri.xhtml" TITLE="ogrenciBilgileri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="anasayfa::#anasayfa.xhtml" NAME="output4"
+    PATH="/anasayfa.xhtml" TARGET="rules:#anasayfa.xhtml"
+    TITLE="anasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciGirisEkrani::#ogrenciGirisEkrani.xhtml" NAME="output5"
+    PATH="/ogrenciGirisEkrani.xhtml"
+    TARGET="rules:#ogrenciGirisEkrani.xhtml" TITLE="ogrenciGirisEkrani" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="calisanGirisEkrani::#calisanGirisEkrani.xhtml" NAME="output6"
+    PATH="/calisanGirisEkrani.xhtml"
+    TARGET="rules:#calisanGirisEkrani.xhtml" TITLE="calisanGirisEkrani" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaGirisEkrani::#firmaGirisEkrani.xhtml"
+    NAME="output7" PATH="/firmaGirisEkrani.xhtml"
+    TARGET="rules:#firmaGirisEkrani.xhtml" TITLE="firmaGirisEkrani" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#cv.xhtml" PATH="/cv.xhtml"
+  SHAPE="504,136,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#cv.xhtml:0" NAME="item" PATH="/cv.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="anasayfa::#anasayfa.xhtml" NAME="output"
+    PATH="/anasayfa.xhtml" TARGET="rules:#anasayfa.xhtml"
+    TITLE="anasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="stajDuyuru::#stajDuyuru.xhtml"
+    NAME="output1" PATH="/stajDuyuru.xhtml"
+    TARGET="rules:#stajDuyuru.xhtml" TITLE="stajDuyuru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="cvfirmaGiris::#cvfirmaGiris.xhtml"
+    NAME="output2" PATH="/cvfirmaGiris.xhtml"
+    TARGET="rules:#cvfirmaGiris.xhtml" TITLE="cvfirmaGiris" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="cv::#cv.xhtml" NAME="output3"
+    PATH="/cv.xhtml" TARGET="rules:#cv.xhtml" TITLE="cv" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#stajDuyuru.xhtml" PATH="/stajDuyuru.xhtml"
+  SHAPE="296,288,50,89" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#stajDuyuru.xhtml:0" NAME="item"
+   PATH="/stajDuyuru.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cv::#cv.xhtml" NAME="output"
+    PATH="/cv.xhtml" TARGET="rules:#cv.xhtml" TITLE="cv" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="anasayfa::#anasayfa.xhtml" NAME="output1"
+    PATH="/anasayfa.xhtml" TARGET="rules:#anasayfa.xhtml"
+    TITLE="anasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmastajDuyuru::#firmastajDuyuru.xhtml"
+    NAME="output2" PATH="/firmastajDuyuru.xhtml"
+    TARGET="rules:#firmastajDuyuru.xhtml" TITLE="firmastajDuyuru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="stajDuyuru::#stajDuyuru.xhtml"
+    NAME="output3" PATH="/stajDuyuru.xhtml"
+    TARGET="rules:#stajDuyuru.xhtml" TITLE="stajDuyuru" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#ogrenciBilgileri.xhtml"
+  PATH="/ogrenciBilgileri.xhtml" SHAPE="855,145,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#ogrenciBilgileri.xhtml:0" NAME="item"
+   PATH="/ogrenciBilgileri.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="sertifikaBilgisi::#sertifikaBilgisi.xhtml"
+    NAME="output" PATH="/sertifikaBilgisi.xhtml"
+    TARGET="rules:#sertifikaBilgisi.xhtml" TITLE="sertifikaBilgisi" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciYabanciDil::#ogrenciYabanciDil.xhtml"
+    NAME="output1" PATH="/ogrenciYabanciDil.xhtml"
+    TARGET="rules:#ogrenciYabanciDil.xhtml" TITLE="ogrenciYabanciDil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciBilgisayarBilgisi::#ogrenciBilgisayarBilgisi.xhtml"
+    NAME="output2" PATH="/ogrenciBilgisayarBilgisi.xhtml"
+    TARGET="rules:#ogrenciBilgisayarBilgisi.xhtml"
+    TITLE="ogrenciBilgisayarBilgisi" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciAnasayfa::#ogrenciAnasayfa.xhtml"
+    NAME="output3" PATH="/ogrenciAnasayfa.xhtml"
+    TARGET="rules:#ogrenciAnasayfa.xhtml" TITLE="ogrenciAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciProfil::#ogrenciProfil.xhtml"
+    NAME="output4" PATH="/ogrenciProfil.xhtml"
+    TARGET="rules:#ogrenciProfil.xhtml" TITLE="ogrenciProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciFirmaGor::#ogrenciFirmaGor.xhtml"
+    NAME="output5" PATH="/ogrenciFirmaGor.xhtml"
+    TARGET="rules:#ogrenciFirmaGor.xhtml" TITLE="ogrenciFirmaGor" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciFirmaListele::#ogrenciFirmaListele.xhtml" NAME="output6"
+    PATH="/ogrenciFirmaListele.xhtml"
+    TARGET="rules:#ogrenciFirmaListele.xhtml"
+    TITLE="ogrenciFirmaListele" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="teknolojiGunleri::#teknolojiGunleri.xhtml"
+    NAME="output7" PATH="/teknolojiGunleri.xhtml"
+    TARGET="rules:#teknolojiGunleri.xhtml" TITLE="teknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciBasvurularim::#ogrenciBasvurularim.xhtml" NAME="output8"
+    PATH="/ogrenciBasvurularim.xhtml"
+    TARGET="rules:#ogrenciBasvurularim.xhtml"
+    TITLE="ogrenciBasvurularim" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="CalisanaMailAt::#CalisanaMailAt.xhtml"
+    NAME="output9" PATH="/CalisanaMailAt.xhtml"
+    TARGET="rules:#CalisanaMailAt.xhtml" TITLE="CalisanaMailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciYorumOku::#OgrenciYorumOku.xhtml"
+    NAME="output10" PATH="/OgrenciYorumOku.xhtml"
+    TARGET="rules:#OgrenciYorumOku.xhtml" TITLE="OgrenciYorumOku" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#sertifikaBilgisi.xhtml"
+  PATH="/sertifikaBilgisi.xhtml" SHAPE="848,424,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#sertifikaBilgisi.xhtml:0" NAME="item"
+   PATH="/sertifikaBilgisi.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="ogrenciBilgileri::#ogrenciBilgileri.xhtml"
+    NAME="output" PATH="/ogrenciBilgileri.xhtml"
+    TARGET="rules:#ogrenciBilgileri.xhtml" TITLE="ogrenciBilgileri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciFirmaListele::#ogrenciFirmaListele.xhtml" NAME="output1"
+    PATH="/ogrenciFirmaListele.xhtml"
+    TARGET="rules:#ogrenciFirmaListele.xhtml"
+    TITLE="ogrenciFirmaListele" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciProfil::#ogrenciProfil.xhtml"
+    NAME="output2" PATH="/ogrenciProfil.xhtml"
+    TARGET="rules:#ogrenciProfil.xhtml" TITLE="ogrenciProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciFirmaGor::#ogrenciFirmaGor.xhtml"
+    NAME="output3" PATH="/ogrenciFirmaGor.xhtml"
+    TARGET="rules:#ogrenciFirmaGor.xhtml" TITLE="ogrenciFirmaGor" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciAnasayfa::#ogrenciAnasayfa.xhtml"
+    NAME="output4" PATH="/ogrenciAnasayfa.xhtml"
+    TARGET="rules:#ogrenciAnasayfa.xhtml" TITLE="ogrenciAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciBasvurularim::#ogrenciBasvurularim.xhtml" NAME="output5"
+    PATH="/ogrenciBasvurularim.xhtml"
+    TARGET="rules:#ogrenciBasvurularim.xhtml"
+    TITLE="ogrenciBasvurularim" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="mailAt::#mailAt.xhtml" NAME="output6"
+    PATH="/mailAt.xhtml" TARGET="rules:#mailAt.xhtml" TITLE="mailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="teknolojiGunleri::#teknolojiGunleri.xhtml"
+    NAME="output7" PATH="/teknolojiGunleri.xhtml"
+    TARGET="rules:#teknolojiGunleri.xhtml" TITLE="teknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciSoru::#OgrenciSoru.xhtml"
+    NAME="output8" PATH="/OgrenciSoru.xhtml"
+    TARGET="rules:#OgrenciSoru.xhtml" TITLE="OgrenciSoru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciYorumOku::#OgrenciYorumOku.xhtml"
+    NAME="output9" PATH="/OgrenciYorumOku.xhtml"
+    TARGET="rules:#OgrenciYorumOku.xhtml" TITLE="OgrenciYorumOku" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#ogrenciYabanciDil.xhtml"
+  PATH="/ogrenciYabanciDil.xhtml" SHAPE="1224,112,50,41" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#ogrenciYabanciDil.xhtml:0" NAME="item"
+   PATH="/ogrenciYabanciDil.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="ogrenciBilgileri::#ogrenciBilgileri.xhtml"
+    NAME="output" PATH="/ogrenciBilgileri.xhtml"
+    TARGET="rules:#ogrenciBilgileri.xhtml" TITLE="ogrenciBilgileri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciProfil::#ogrenciProfil.xhtml"
+    NAME="output1" PATH="/ogrenciProfil.xhtml"
+    TARGET="rules:#ogrenciProfil.xhtml" TITLE="ogrenciProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciFirmaGor::#ogrenciFirmaGor.xhtml"
+    NAME="output2" PATH="/ogrenciFirmaGor.xhtml"
+    TARGET="rules:#ogrenciFirmaGor.xhtml" TITLE="ogrenciFirmaGor" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciFirmaListele::#ogrenciFirmaListele.xhtml" NAME="output3"
+    PATH="/ogrenciFirmaListele.xhtml"
+    TARGET="rules:#ogrenciFirmaListele.xhtml"
+    TITLE="ogrenciFirmaListele" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="mailAt::#mailAt.xhtml" NAME="output4"
+    PATH="/mailAt.xhtml" TARGET="rules:#mailAt.xhtml" TITLE="mailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciAnasayfa::#ogrenciAnasayfa.xhtml"
+    NAME="output5" PATH="/ogrenciAnasayfa.xhtml"
+    TARGET="rules:#ogrenciAnasayfa.xhtml" TITLE="ogrenciAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="teknolojiGunleri::#teknolojiGunleri.xhtml"
+    NAME="output6" PATH="/teknolojiGunleri.xhtml"
+    TARGET="rules:#teknolojiGunleri.xhtml" TITLE="teknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciBasvurularim::#ogrenciBasvurularim.xhtml" NAME="output7"
+    PATH="/ogrenciBasvurularim.xhtml"
+    TARGET="rules:#ogrenciBasvurularim.xhtml"
+    TITLE="ogrenciBasvurularim" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="CalisanaMailAt::#CalisanaMailAt.xhtml"
+    NAME="output8" PATH="/CalisanaMailAt.xhtml"
+    TARGET="rules:#CalisanaMailAt.xhtml" TITLE="CalisanaMailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciSoru::#OgrenciSoru.xhtml"
+    NAME="output9" PATH="/OgrenciSoru.xhtml"
+    TARGET="rules:#OgrenciSoru.xhtml" TITLE="OgrenciSoru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciYorumOku::#OgrenciYorumOku.xhtml"
+    NAME="output10" PATH="/OgrenciYorumOku.xhtml"
+    TARGET="rules:#OgrenciYorumOku.xhtml" TITLE="OgrenciYorumOku" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#ogrenciBilgisayarBilgisi.xhtml"
+  PATH="/ogrenciBilgisayarBilgisi.xhtml" SHAPE="1336,576,50,57" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#ogrenciBilgisayarBilgisi.xhtml:0" NAME="item"
+   PATH="/ogrenciBilgisayarBilgisi.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="ogrenciBilgileri::#ogrenciBilgileri.xhtml"
+    NAME="output" PATH="/ogrenciBilgileri.xhtml"
+    TARGET="rules:#ogrenciBilgileri.xhtml" TITLE="ogrenciBilgileri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciFirmaListele::#ogrenciFirmaListele.xhtml" NAME="output2"
+    PATH="/ogrenciFirmaListele.xhtml"
+    TARGET="rules:#ogrenciFirmaListele.xhtml"
+    TITLE="ogrenciFirmaListele" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciProfil::#ogrenciProfil.xhtml"
+    NAME="output3" PATH="/ogrenciProfil.xhtml"
+    TARGET="rules:#ogrenciProfil.xhtml" TITLE="ogrenciProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciFirmaGor::#ogrenciFirmaGor.xhtml"
+    NAME="output4" PATH="/ogrenciFirmaGor.xhtml"
+    TARGET="rules:#ogrenciFirmaGor.xhtml" TITLE="ogrenciFirmaGor" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="mailAt::#mailAt.xhtml" NAME="output5"
+    PATH="/mailAt.xhtml" TARGET="rules:#mailAt.xhtml" TITLE="mailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciBasvurularim::#ogrenciBasvurularim.xhtml" NAME="output6"
+    PATH="/ogrenciBasvurularim.xhtml"
+    TARGET="rules:#ogrenciBasvurularim.xhtml"
+    TITLE="ogrenciBasvurularim" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="teknolojiGunleri::#teknolojiGunleri.xhtml"
+    NAME="output7" PATH="/teknolojiGunleri.xhtml"
+    TARGET="rules:#teknolojiGunleri.xhtml" TITLE="teknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciAnasayfa::#ogrenciAnasayfa.xhtml"
+    NAME="output1" PATH="/ogrenciAnasayfa.xhtml"
+    TARGET="rules:#ogrenciAnasayfa.xhtml" TITLE="ogrenciAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="CalisanaMailAt::#CalisanaMailAt.xhtml"
+    NAME="output8" PATH="/CalisanaMailAt.xhtml"
+    TARGET="rules:#CalisanaMailAt.xhtml" TITLE="CalisanaMailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciSoru::#OgrenciSoru.xhtml"
+    NAME="output9" PATH="/OgrenciSoru.xhtml"
+    TARGET="rules:#OgrenciSoru.xhtml" TITLE="OgrenciSoru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciYorumOku::#OgrenciYorumOku.xhtml"
+    NAME="output10" PATH="/OgrenciYorumOku.xhtml"
+    TARGET="rules:#OgrenciYorumOku.xhtml" TITLE="OgrenciYorumOku" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#ogrenciAnasayfa.xhtml"
+  PATH="/ogrenciAnasayfa.xhtml" SHAPE="688,448,50,153" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#ogrenciAnasayfa.xhtml:0" NAME="item"
+   PATH="/ogrenciAnasayfa.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="ogrenciBilgileri::#ogrenciBilgileri.xhtml"
+    NAME="output" PATH="/ogrenciBilgileri.xhtml"
+    TARGET="rules:#ogrenciBilgileri.xhtml" TITLE="ogrenciBilgileri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="teknolojiGunleri::#teknolojiGunleri.xhtml"
+    NAME="output1" PATH="/teknolojiGunleri.xhtml"
+    TARGET="rules:#teknolojiGunleri.xhtml" TITLE="teknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="mailAt::#mailAt.xhtml" NAME="output2"
+    PATH="/mailAt.xhtml" TARGET="rules:#mailAt.xhtml" TITLE="mailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciAnasayfa::#ogrenciAnasayfa.xhtml"
+    NAME="output3" PATH="/ogrenciAnasayfa.xhtml"
+    TARGET="rules:#ogrenciAnasayfa.xhtml" TITLE="ogrenciAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciProfil::#ogrenciProfil.xhtml"
+    NAME="output4" PATH="/ogrenciProfil.xhtml"
+    TARGET="rules:#ogrenciProfil.xhtml" TITLE="ogrenciProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciFirmaGor::#ogrenciFirmaGor.xhtml"
+    NAME="output5" PATH="/ogrenciFirmaGor.xhtml"
+    TARGET="rules:#ogrenciFirmaGor.xhtml" TITLE="ogrenciFirmaGor" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciFirmaListele::#ogrenciFirmaListele.xhtml" NAME="output6"
+    PATH="/ogrenciFirmaListele.xhtml"
+    TARGET="rules:#ogrenciFirmaListele.xhtml"
+    TITLE="ogrenciFirmaListele" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciBasvurularim::#ogrenciBasvurularim.xhtml" NAME="output7"
+    PATH="/ogrenciBasvurularim.xhtml"
+    TARGET="rules:#ogrenciBasvurularim.xhtml"
+    TITLE="ogrenciBasvurularim" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="CalisanaMailAt::#CalisanaMailAt.xhtml"
+    NAME="output8" PATH="/CalisanaMailAt.xhtml"
+    TARGET="rules:#CalisanaMailAt.xhtml" TITLE="CalisanaMailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciSoru::#OgrenciSoru.xhtml"
+    NAME="output9" PATH="/OgrenciSoru.xhtml"
+    TARGET="rules:#OgrenciSoru.xhtml" TITLE="OgrenciSoru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciYorumOku::#OgrenciYorumOku.xhtml"
+    NAME="output10" PATH="/OgrenciYorumOku.xhtml"
+    TARGET="rules:#OgrenciYorumOku.xhtml" TITLE="OgrenciYorumOku" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#firmaGiris.xhtml" PATH="/firmaGiris.xhtml"
+  SHAPE="104,368,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#firmaGiris.xhtml:0" NAME="item"
+   PATH="/firmaGiris.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="firmaGiris::#firmaGiris.xhtml" NAME="output"
+    PATH="/firmaGiris.xhtml" TARGET="rules:#firmaGiris.xhtml"
+    TITLE="firmaGiris" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#firmaAnasayfa.xhtml"
+  PATH="/firmaAnasayfa.xhtml" SHAPE="216,456,50,73" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#firmaAnasayfa.xhtml:0" NAME="item"
+   PATH="/firmaAnasayfa.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="firmaBilgileri::#firmaBilgileri.xhtml"
+    NAME="output" PATH="/firmaBilgileri.xhtml"
+    TARGET="rules:#firmaBilgileri.xhtml" TITLE="firmaBilgileri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="yarismaYap::#yarismaYap.xhtml"
+    NAME="output1" PATH="/yarismaYap.xhtml"
+    TARGET="rules:#yarismaYap.xhtml" TITLE="yarismaYap" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="firmateknolojiGunleri::#firmateknolojiGunleri.xhtml"
+    NAME="output2" PATH="/firmateknolojiGunleri.xhtml"
+    TARGET="rules:#firmateknolojiGunleri.xhtml"
+    TITLE="firmateknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmailanver1::#firmailanver1.xhtml"
+    NAME="output3" PATH="/firmailanver1.xhtml"
+    TARGET="rules:#firmailanver1.xhtml" TITLE="firmailanver1" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaProfil::#firmaProfil.xhtml"
+    NAME="output4" PATH="/firmaProfil.xhtml"
+    TARGET="rules:#firmaProfil.xhtml" TITLE="firmaProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaGelenBasvuru::#firmaGelenBasvuru.xhtml"
+    NAME="output5" PATH="/firmaGelenBasvuru.xhtml"
+    TARGET="rules:#firmaGelenBasvuru.xhtml" TITLE="firmaGelenBasvuru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaCalisanKayit::#firmaCalisanKayit.xhtml"
+    NAME="output6" PATH="/firmaCalisanKayit.xhtml"
+    TARGET="rules:#firmaCalisanKayit.xhtml" TITLE="firmaCalisanKayit" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#firmaBilgileri.xhtml"
+  PATH="/firmaBilgileri.xhtml" SHAPE="24,560,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#firmaBilgileri.xhtml:0" NAME="item"
+   PATH="/firmaBilgileri.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="firmaAnasayfa::#firmaAnasayfa.xhtml"
+    NAME="output" PATH="/firmaAnasayfa.xhtml"
+    TARGET="rules:#firmaAnasayfa.xhtml" TITLE="firmaAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="firmateknolojiGunleri::#firmateknolojiGunleri.xhtml"
+    NAME="output1" PATH="/firmateknolojiGunleri.xhtml"
+    TARGET="rules:#firmateknolojiGunleri.xhtml"
+    TITLE="firmateknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="yarismaYap::#yarismaYap.xhtml"
+    NAME="output2" PATH="/yarismaYap.xhtml"
+    TARGET="rules:#yarismaYap.xhtml" TITLE="yarismaYap" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmailanver1::#firmailanver1.xhtml"
+    NAME="output3" PATH="/firmailanver1.xhtml"
+    TARGET="rules:#firmailanver1.xhtml" TITLE="firmailanver1" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaProfil::#firmaProfil.xhtml"
+    NAME="output4" PATH="/firmaProfil.xhtml"
+    TARGET="rules:#firmaProfil.xhtml" TITLE="firmaProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaGelenBasvuru::#firmaGelenBasvuru.xhtml"
+    NAME="output5" PATH="/firmaGelenBasvuru.xhtml"
+    TARGET="rules:#firmaGelenBasvuru.xhtml" TITLE="firmaGelenBasvuru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaCalisanKayit::#firmaCalisanKayit.xhtml"
+    NAME="output6" PATH="/firmaCalisanKayit.xhtml"
+    TARGET="rules:#firmaCalisanKayit.xhtml" TITLE="firmaCalisanKayit" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#yarismaYap.xhtml" PATH="/yarismaYap.xhtml"
+  SHAPE="224,616,50,57" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#yarismaYap.xhtml:0" NAME="item"
+   PATH="/yarismaYap.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="firmateknolojiGunleri::#firmateknolojiGunleri.xhtml"
+    NAME="output" PATH="/firmateknolojiGunleri.xhtml"
+    TARGET="rules:#firmateknolojiGunleri.xhtml"
+    TITLE="firmateknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaBilgileri::#firmaBilgileri.xhtml"
+    NAME="output1" PATH="/firmaBilgileri.xhtml"
+    TARGET="rules:#firmaBilgileri.xhtml" TITLE="firmaBilgileri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmailanver1::#firmailanver1.xhtml"
+    NAME="output2" PATH="/firmailanver1.xhtml"
+    TARGET="rules:#firmailanver1.xhtml" TITLE="firmailanver1" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaProfil::#firmaProfil.xhtml"
+    NAME="output3" PATH="/firmaProfil.xhtml"
+    TARGET="rules:#firmaProfil.xhtml" TITLE="firmaProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaGelenBasvuru::#firmaGelenBasvuru.xhtml"
+    NAME="output4" PATH="/firmaGelenBasvuru.xhtml"
+    TARGET="rules:#firmaGelenBasvuru.xhtml" TITLE="firmaGelenBasvuru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaCalisanKayit::#firmaCalisanKayit.xhtml"
+    NAME="output5" PATH="/firmaCalisanKayit.xhtml"
+    TARGET="rules:#firmaCalisanKayit.xhtml" TITLE="firmaCalisanKayit" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#teknolojiGunleri.xhtml"
+  PATH="/teknolojiGunleri.xhtml" SHAPE="480,424,50,57" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#teknolojiGunleri.xhtml:0" NAME="item"
+   PATH="/teknolojiGunleri.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="ogrenciAnasayfa::#ogrenciAnasayfa.xhtml"
+    NAME="output" PATH="/ogrenciAnasayfa.xhtml"
+    TARGET="rules:#ogrenciAnasayfa.xhtml" TITLE="ogrenciAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="mailAt::#mailAt.xhtml" NAME="output1"
+    PATH="/mailAt.xhtml" TARGET="rules:#mailAt.xhtml" TITLE="mailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciBilgileri::#ogrenciBilgileri.xhtml"
+    NAME="output2" PATH="/ogrenciBilgileri.xhtml"
+    TARGET="rules:#ogrenciBilgileri.xhtml" TITLE="ogrenciBilgileri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciFirmaGor::#ogrenciFirmaGor.xhtml"
+    NAME="output3" PATH="/ogrenciFirmaGor.xhtml"
+    TARGET="rules:#ogrenciFirmaGor.xhtml" TITLE="ogrenciFirmaGor" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciProfil::#ogrenciProfil.xhtml"
+    NAME="output4" PATH="/ogrenciProfil.xhtml"
+    TARGET="rules:#ogrenciProfil.xhtml" TITLE="ogrenciProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciFirmaListele::#ogrenciFirmaListele.xhtml" NAME="output5"
+    PATH="/ogrenciFirmaListele.xhtml"
+    TARGET="rules:#ogrenciFirmaListele.xhtml"
+    TITLE="ogrenciFirmaListele" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciBasvurularim::#ogrenciBasvurularim.xhtml" NAME="output6"
+    PATH="/ogrenciBasvurularim.xhtml"
+    TARGET="rules:#ogrenciBasvurularim.xhtml"
+    TITLE="ogrenciBasvurularim" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="CalisanaMailAt::#CalisanaMailAt.xhtml"
+    NAME="output7" PATH="/CalisanaMailAt.xhtml"
+    TARGET="rules:#CalisanaMailAt.xhtml" TITLE="CalisanaMailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciSoru::#OgrenciSoru.xhtml"
+    NAME="output8" PATH="/OgrenciSoru.xhtml"
+    TARGET="rules:#OgrenciSoru.xhtml" TITLE="OgrenciSoru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciYorumOku::#OgrenciYorumOku.xhtml"
+    NAME="output9" PATH="/OgrenciYorumOku.xhtml"
+    TARGET="rules:#OgrenciYorumOku.xhtml" TITLE="OgrenciYorumOku" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#mailAt.xhtml" PATH="/mailAt.xhtml"
+  SHAPE="576,752,50,57" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#mailAt.xhtml:0" NAME="item"
+   PATH="/mailAt.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="teknolojiGunleri::#teknolojiGunleri.xhtml"
+    NAME="output" PATH="/teknolojiGunleri.xhtml"
+    TARGET="rules:#teknolojiGunleri.xhtml" TITLE="teknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciAnasayfa::#ogrenciAnasayfa.xhtml"
+    NAME="output1" PATH="/ogrenciAnasayfa.xhtml"
+    TARGET="rules:#ogrenciAnasayfa.xhtml" TITLE="ogrenciAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciFirmaGor::#ogrenciFirmaGor.xhtml"
+    NAME="output2" PATH="/ogrenciFirmaGor.xhtml"
+    TARGET="rules:#ogrenciFirmaGor.xhtml" TITLE="ogrenciFirmaGor" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciProfil::#ogrenciProfil.xhtml"
+    NAME="output3" PATH="/ogrenciProfil.xhtml"
+    TARGET="rules:#ogrenciProfil.xhtml" TITLE="ogrenciProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciFirmaListele::#ogrenciFirmaListele.xhtml" NAME="output4"
+    PATH="/ogrenciFirmaListele.xhtml"
+    TARGET="rules:#ogrenciFirmaListele.xhtml"
+    TITLE="ogrenciFirmaListele" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciBasvurularim::#ogrenciBasvurularim.xhtml" NAME="output5"
+    PATH="/ogrenciBasvurularim.xhtml"
+    TARGET="rules:#ogrenciBasvurularim.xhtml"
+    TITLE="ogrenciBasvurularim" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="CalisanaMailAt::#CalisanaMailAt.xhtml"
+    NAME="output6" PATH="/CalisanaMailAt.xhtml"
+    TARGET="rules:#CalisanaMailAt.xhtml" TITLE="CalisanaMailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciSoru::#OgrenciSoru.xhtml"
+    NAME="output7" PATH="/OgrenciSoru.xhtml"
+    TARGET="rules:#OgrenciSoru.xhtml" TITLE="OgrenciSoru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciYorumOku::#OgrenciYorumOku.xhtml"
+    NAME="output8" PATH="/OgrenciYorumOku.xhtml"
+    TARGET="rules:#OgrenciYorumOku.xhtml" TITLE="OgrenciYorumOku" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#firmateknolojiGunleri.xhtml"
+  PATH="/firmateknolojiGunleri.xhtml" SHAPE="40,760,50,57" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#firmateknolojiGunleri.xhtml:0" NAME="item"
+   PATH="/firmateknolojiGunleri.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="firmaAnasayfa::#firmaAnasayfa.xhtml"
+    NAME="output" PATH="/firmaAnasayfa.xhtml"
+    TARGET="rules:#firmaAnasayfa.xhtml" TITLE="firmaAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="yarismaYap::#yarismaYap.xhtml"
+    NAME="output1" PATH="/yarismaYap.xhtml"
+    TARGET="rules:#yarismaYap.xhtml" TITLE="yarismaYap" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaBilgileri::#firmaBilgileri.xhtml"
+    NAME="output2" PATH="/firmaBilgileri.xhtml"
+    TARGET="rules:#firmaBilgileri.xhtml" TITLE="firmaBilgileri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmailanver1::#firmailanver1.xhtml"
+    NAME="output3" PATH="/firmailanver1.xhtml"
+    TARGET="rules:#firmailanver1.xhtml" TITLE="firmailanver1" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaProfil::#firmaProfil.xhtml"
+    NAME="output4" PATH="/firmaProfil.xhtml"
+    TARGET="rules:#firmaProfil.xhtml" TITLE="firmaProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaGelenBasvuru::#firmaGelenBasvuru.xhtml"
+    NAME="output5" PATH="/firmaGelenBasvuru.xhtml"
+    TARGET="rules:#firmaGelenBasvuru.xhtml" TITLE="firmaGelenBasvuru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaCalisanKayit::#firmaCalisanKayit.xhtml"
+    NAME="output6" PATH="/firmaCalisanKayit.xhtml"
+    TARGET="rules:#firmaCalisanKayit.xhtml" TITLE="firmaCalisanKayit" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#ogrenciProfil.xhtml"
+  PATH="/ogrenciProfil.xhtml" SHAPE="984,672,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#ogrenciProfil.xhtml:0" NAME="item"
+   PATH="/ogrenciProfil.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="ogrenciFirmaGor::#ogrenciFirmaGor.xhtml"
+    NAME="output" PATH="/ogrenciFirmaGor.xhtml"
+    TARGET="rules:#ogrenciFirmaGor.xhtml" TITLE="ogrenciFirmaGor" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciAnasayfa::#ogrenciAnasayfa.xhtml"
+    NAME="output1" PATH="/ogrenciAnasayfa.xhtml"
+    TARGET="rules:#ogrenciAnasayfa.xhtml" TITLE="ogrenciAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciProfil::#ogrenciProfil.xhtml"
+    NAME="output2" PATH="/ogrenciProfil.xhtml"
+    TARGET="rules:#ogrenciProfil.xhtml" TITLE="ogrenciProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciFirmaListele::#ogrenciFirmaListele.xhtml" NAME="output3"
+    PATH="/ogrenciFirmaListele.xhtml"
+    TARGET="rules:#ogrenciFirmaListele.xhtml"
+    TITLE="ogrenciFirmaListele" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciBasvurularim::#ogrenciBasvurularim.xhtml" NAME="output4"
+    PATH="/ogrenciBasvurularim.xhtml"
+    TARGET="rules:#ogrenciBasvurularim.xhtml"
+    TITLE="ogrenciBasvurularim" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="CalisanaMailAt::#CalisanaMailAt.xhtml"
+    NAME="output5" PATH="/CalisanaMailAt.xhtml"
+    TARGET="rules:#CalisanaMailAt.xhtml" TITLE="CalisanaMailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciSoru::#OgrenciSoru.xhtml"
+    NAME="output6" PATH="/OgrenciSoru.xhtml"
+    TARGET="rules:#OgrenciSoru.xhtml" TITLE="OgrenciSoru" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#ogrenciFirmaGor.xhtml"
+  PATH="/ogrenciFirmaGor.xhtml" SHAPE="873,763,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#ogrenciFirmaGor.xhtml:0" NAME="item"
+   PATH="/ogrenciFirmaGor.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="ogrenciAnasayfa::#ogrenciAnasayfa.xhtml"
+    NAME="output" PATH="/ogrenciAnasayfa.xhtml"
+    TARGET="rules:#ogrenciAnasayfa.xhtml" TITLE="ogrenciAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciProfil::#ogrenciProfil.xhtml"
+    NAME="output1" PATH="/ogrenciProfil.xhtml"
+    TARGET="rules:#ogrenciProfil.xhtml" TITLE="ogrenciProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciFirmaListele::#ogrenciFirmaListele.xhtml" NAME="output2"
+    PATH="/ogrenciFirmaListele.xhtml"
+    TARGET="rules:#ogrenciFirmaListele.xhtml"
+    TITLE="ogrenciFirmaListele" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciFirmaGor::#ogrenciFirmaGor.xhtml"
+    NAME="output3" PATH="/ogrenciFirmaGor.xhtml"
+    TARGET="rules:#ogrenciFirmaGor.xhtml" TITLE="ogrenciFirmaGor" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciBasvurularim::#ogrenciBasvurularim.xhtml" NAME="output4"
+    PATH="/ogrenciBasvurularim.xhtml"
+    TARGET="rules:#ogrenciBasvurularim.xhtml"
+    TITLE="ogrenciBasvurularim" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="CalisanaMailAt::#CalisanaMailAt.xhtml"
+    NAME="output5" PATH="/CalisanaMailAt.xhtml"
+    TARGET="rules:#CalisanaMailAt.xhtml" TITLE="CalisanaMailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciSoru::#OgrenciSoru.xhtml"
+    NAME="output6" PATH="/OgrenciSoru.xhtml"
+    TARGET="rules:#OgrenciSoru.xhtml" TITLE="OgrenciSoru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciYorumOku::#OgrenciYorumOku.xhtml"
+    NAME="output7" PATH="/OgrenciYorumOku.xhtml"
+    TARGET="rules:#OgrenciYorumOku.xhtml" TITLE="OgrenciYorumOku" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#ogrenciFirmaListele.xhtml"
+  PATH="/ogrenciFirmaListele.xhtml" SHAPE="1088,512,50,41" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#ogrenciFirmaListele.xhtml:0" NAME="item"
+   PATH="/ogrenciFirmaListele.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="ogrenciFirmaGor::#ogrenciFirmaGor.xhtml"
+    NAME="output" PATH="/ogrenciFirmaGor.xhtml"
+    TARGET="rules:#ogrenciFirmaGor.xhtml" TITLE="ogrenciFirmaGor" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciAnasayfa::#ogrenciAnasayfa.xhtml"
+    NAME="output1" PATH="/ogrenciAnasayfa.xhtml"
+    TARGET="rules:#ogrenciAnasayfa.xhtml" TITLE="ogrenciAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciProfil::#ogrenciProfil.xhtml"
+    NAME="output2" PATH="/ogrenciProfil.xhtml"
+    TARGET="rules:#ogrenciProfil.xhtml" TITLE="ogrenciProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciFirmaListele::#ogrenciFirmaListele.xhtml" NAME="output3"
+    PATH="/ogrenciFirmaListele.xhtml"
+    TARGET="rules:#ogrenciFirmaListele.xhtml"
+    TITLE="ogrenciFirmaListele" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciBasvurularim::#ogrenciBasvurularim.xhtml" NAME="output4"
+    PATH="/ogrenciBasvurularim.xhtml"
+    TARGET="rules:#ogrenciBasvurularim.xhtml"
+    TITLE="ogrenciBasvurularim" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="CalisanaMailAt::#CalisanaMailAt.xhtml"
+    NAME="output5" PATH="/CalisanaMailAt.xhtml"
+    TARGET="rules:#CalisanaMailAt.xhtml" TITLE="CalisanaMailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciSoru::#OgrenciSoru.xhtml"
+    NAME="output6" PATH="/OgrenciSoru.xhtml"
+    TARGET="rules:#OgrenciSoru.xhtml" TITLE="OgrenciSoru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciYorumOku::#OgrenciYorumOku.xhtml"
+    NAME="output7" PATH="/OgrenciYorumOku.xhtml"
+    TARGET="rules:#OgrenciYorumOku.xhtml" TITLE="OgrenciYorumOku" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#cvfirmaGiris.xhtml"
+  PATH="/cvfirmaGiris.xhtml" SHAPE="615,45,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#cvfirmaGiris.xhtml:0" NAME="item"
+   PATH="/cvfirmaGiris.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cvfirmaGiris::#cvfirmaGiris.xhtml"
+    NAME="output" PATH="/cvfirmaGiris.xhtml"
+    TARGET="rules:#cvfirmaGiris.xhtml" TITLE="cvfirmaGiris" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#firmastajDuyuru.xhtml"
+  PATH="/firmastajDuyuru.xhtml" SHAPE="443,333,0,0"
+  model-entity="JSFProcessGroup" persistent="true"/>
+ <PROCESS-ITEM NAME="rules:#ogrenciGirisEkrani.xhtml"
+  PATH="/ogrenciGirisEkrani.xhtml" SHAPE="912,32,50,73" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#ogrenciGirisEkrani.xhtml:0" NAME="item"
+   PATH="/ogrenciGirisEkrani.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="anasayfa::#anasayfa.xhtml" NAME="output1"
+    PATH="/anasayfa.xhtml" TARGET="rules:#anasayfa.xhtml"
+    TITLE="anasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciGirisEkrani::#ogrenciGirisEkrani.xhtml" NAME="output"
+    PATH="/ogrenciGirisEkrani.xhtml"
+    TARGET="rules:#ogrenciGirisEkrani.xhtml" TITLE="ogrenciGirisEkrani" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciAnasayfa::#ogrenciAnasayfa.xhtml"
+    NAME="output2" PATH="/ogrenciAnasayfa.xhtml"
+    TARGET="rules:#ogrenciAnasayfa.xhtml" TITLE="ogrenciAnasayfa" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#firmaGirisEkrani.xhtml"
+  PATH="/firmaGirisEkrani.xhtml" SHAPE="32,472,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#firmaGirisEkrani.xhtml:0" NAME="item"
+   PATH="/firmaGirisEkrani.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="firmaAnasayfa::#firmaAnasayfa.xhtml"
+    NAME="output" PATH="/firmaAnasayfa.xhtml"
+    TARGET="rules:#firmaAnasayfa.xhtml" TITLE="firmaAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaGirisEkrani::#firmaGirisEkrani.xhtml"
+    NAME="output1" PATH="/firmaGirisEkrani.xhtml"
+    TARGET="rules:#firmaGirisEkrani.xhtml" TITLE="firmaGirisEkrani" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#calisanGirisEkrani.xhtml"
+  PATH="/calisanGirisEkrani.xhtml" SHAPE="1024,368,50,41" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#calisanGirisEkrani.xhtml:0" NAME="item"
+   PATH="/calisanGirisEkrani.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="firmaCalisanAnasayfa::#firmaCalisanAnasayfa.xhtml" NAME="output"
+    PATH="/firmaCalisanAnasayfa.xhtml"
+    TARGET="rules:#firmaCalisanAnasayfa.xhtml"
+    TITLE="firmaCalisanAnasayfa" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#firmaCalisanAnasayfa.xhtml"
+  PATH="/firmaCalisanAnasayfa.xhtml" SHAPE="1216,928,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#firmaCalisanAnasayfa.xhtml:0" NAME="item"
+   PATH="/firmaCalisanAnasayfa.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="CalisanTeknolojiGunleri::#CalisanTeknolojiGunleri.xhtml"
+    NAME="output" PATH="/CalisanTeknolojiGunleri.xhtml"
+    TARGET="rules:#CalisanTeknolojiGunleri.xhtml"
+    TITLE="CalisanTeknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="FirmaCalisanYorum::#FirmaCalisanYorum.xhtml"
+    NAME="output1" PATH="/FirmaCalisanYorum.xhtml"
+    TARGET="rules:#FirmaCalisanYorum.xhtml" TITLE="FirmaCalisanYorum" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#ogrenciBasvurularim.xhtml"
+  PATH="/ogrenciBasvurularim.xhtml" SHAPE="320,752,50,121" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#ogrenciBasvurularim.xhtml:0" NAME="item"
+   PATH="/ogrenciBasvurularim.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="ogrenciAnasayfa::#ogrenciAnasayfa.xhtml"
+    NAME="output" PATH="/ogrenciAnasayfa.xhtml"
+    TARGET="rules:#ogrenciAnasayfa.xhtml" TITLE="ogrenciAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciProfil::#ogrenciProfil.xhtml"
+    NAME="output1" PATH="/ogrenciProfil.xhtml"
+    TARGET="rules:#ogrenciProfil.xhtml" TITLE="ogrenciProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciFirmaGor::#ogrenciFirmaGor.xhtml"
+    NAME="output2" PATH="/ogrenciFirmaGor.xhtml"
+    TARGET="rules:#ogrenciFirmaGor.xhtml" TITLE="ogrenciFirmaGor" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="teknolojiGunleri::#teknolojiGunleri.xhtml"
+    NAME="output3" PATH="/teknolojiGunleri.xhtml"
+    TARGET="rules:#teknolojiGunleri.xhtml" TITLE="teknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciFirmaListele::#ogrenciFirmaListele.xhtml" NAME="output4"
+    PATH="/ogrenciFirmaListele.xhtml"
+    TARGET="rules:#ogrenciFirmaListele.xhtml"
+    TITLE="ogrenciFirmaListele" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciBilgileri::#ogrenciBilgileri.xhtml"
+    NAME="output5" PATH="/ogrenciBilgileri.xhtml"
+    TARGET="rules:#ogrenciBilgileri.xhtml" TITLE="ogrenciBilgileri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="mailAt::#mailAt.xhtml" NAME="output6"
+    PATH="/mailAt.xhtml" TARGET="rules:#mailAt.xhtml" TITLE="mailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="CalisanaMailAt::#CalisanaMailAt.xhtml"
+    NAME="output7" PATH="/CalisanaMailAt.xhtml"
+    TARGET="rules:#CalisanaMailAt.xhtml" TITLE="CalisanaMailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciYorumOku::#OgrenciYorumOku.xhtml"
+    NAME="output8" PATH="/OgrenciYorumOku.xhtml"
+    TARGET="rules:#OgrenciYorumOku.xhtml" TITLE="OgrenciYorumOku" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#CalisanaMailAt.xhtml"
+  PATH="/CalisanaMailAt.xhtml" SHAPE="1355,320,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#CalisanaMailAt.xhtml:0" NAME="item"
+   PATH="/CalisanaMailAt.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciFirmaListele::#ogrenciFirmaListele.xhtml" NAME="output"
+    PATH="/ogrenciFirmaListele.xhtml"
+    TARGET="rules:#ogrenciFirmaListele.xhtml"
+    TITLE="ogrenciFirmaListele" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciProfil::#ogrenciProfil.xhtml"
+    NAME="output1" PATH="/ogrenciProfil.xhtml"
+    TARGET="rules:#ogrenciProfil.xhtml" TITLE="ogrenciProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciFirmaGor::#ogrenciFirmaGor.xhtml"
+    NAME="output2" PATH="/ogrenciFirmaGor.xhtml"
+    TARGET="rules:#ogrenciFirmaGor.xhtml" TITLE="ogrenciFirmaGor" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="mailAt::#mailAt.xhtml" NAME="output3"
+    PATH="/mailAt.xhtml" TARGET="rules:#mailAt.xhtml" TITLE="mailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciBasvurularim::#ogrenciBasvurularim.xhtml" NAME="output4"
+    PATH="/ogrenciBasvurularim.xhtml"
+    TARGET="rules:#ogrenciBasvurularim.xhtml"
+    TITLE="ogrenciBasvurularim" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciAnasayfa::#ogrenciAnasayfa.xhtml"
+    NAME="output5" PATH="/ogrenciAnasayfa.xhtml"
+    TARGET="rules:#ogrenciAnasayfa.xhtml" TITLE="ogrenciAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="teknolojiGunleri::#teknolojiGunleri.xhtml"
+    NAME="output6" PATH="/teknolojiGunleri.xhtml"
+    TARGET="rules:#teknolojiGunleri.xhtml" TITLE="teknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciBilgileri::#ogrenciBilgileri.xhtml"
+    NAME="output7" PATH="/ogrenciBilgileri.xhtml"
+    TARGET="rules:#ogrenciBilgileri.xhtml" TITLE="ogrenciBilgileri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciSoru::#OgrenciSoru.xhtml"
+    NAME="output8" PATH="/OgrenciSoru.xhtml"
+    TARGET="rules:#OgrenciSoru.xhtml" TITLE="OgrenciSoru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciYorumOku::#OgrenciYorumOku.xhtml"
+    NAME="output9" PATH="/OgrenciYorumOku.xhtml"
+    TARGET="rules:#OgrenciYorumOku.xhtml" TITLE="OgrenciYorumOku" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#OgrenciSoru.xhtml" PATH="/OgrenciSoru.xhtml"
+  SHAPE="1088,216,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#OgrenciSoru.xhtml:0" NAME="item"
+   PATH="/OgrenciSoru.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="CalisanaMailAt::#CalisanaMailAt.xhtml"
+    NAME="output" PATH="/CalisanaMailAt.xhtml"
+    TARGET="rules:#CalisanaMailAt.xhtml" TITLE="CalisanaMailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciAnasayfa::#ogrenciAnasayfa.xhtml"
+    NAME="output1" PATH="/ogrenciAnasayfa.xhtml"
+    TARGET="rules:#ogrenciAnasayfa.xhtml" TITLE="ogrenciAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciFirmaListele::#ogrenciFirmaListele.xhtml" NAME="output2"
+    PATH="/ogrenciFirmaListele.xhtml"
+    TARGET="rules:#ogrenciFirmaListele.xhtml"
+    TITLE="ogrenciFirmaListele" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciProfil::#ogrenciProfil.xhtml"
+    NAME="output3" PATH="/ogrenciProfil.xhtml"
+    TARGET="rules:#ogrenciProfil.xhtml" TITLE="ogrenciProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="mailAt::#mailAt.xhtml" NAME="output4"
+    PATH="/mailAt.xhtml" TARGET="rules:#mailAt.xhtml" TITLE="mailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciFirmaGor::#ogrenciFirmaGor.xhtml"
+    NAME="output5" PATH="/ogrenciFirmaGor.xhtml"
+    TARGET="rules:#ogrenciFirmaGor.xhtml" TITLE="ogrenciFirmaGor" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="teknolojiGunleri::#teknolojiGunleri.xhtml"
+    NAME="output6" PATH="/teknolojiGunleri.xhtml"
+    TARGET="rules:#teknolojiGunleri.xhtml" TITLE="teknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciYorumOku::#OgrenciYorumOku.xhtml"
+    NAME="output7" PATH="/OgrenciYorumOku.xhtml"
+    TARGET="rules:#OgrenciYorumOku.xhtml" TITLE="OgrenciYorumOku" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#firmailanver1.xhtml"
+  PATH="/firmailanver1.xhtml" SHAPE="40,16,50,89" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#firmailanver1.xhtml:0" NAME="item"
+   PATH="/firmailanver1.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="firmaAnasayfa::#firmaAnasayfa.xhtml"
+    NAME="output" PATH="/firmaAnasayfa.xhtml"
+    TARGET="rules:#firmaAnasayfa.xhtml" TITLE="firmaAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaBilgileri::#firmaBilgileri.xhtml"
+    NAME="output1" PATH="/firmaBilgileri.xhtml"
+    TARGET="rules:#firmaBilgileri.xhtml" TITLE="firmaBilgileri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="yarismaYap::#yarismaYap.xhtml"
+    NAME="output2" PATH="/yarismaYap.xhtml"
+    TARGET="rules:#yarismaYap.xhtml" TITLE="yarismaYap" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="firmateknolojiGunleri::#firmateknolojiGunleri.xhtml"
+    NAME="output3" PATH="/firmateknolojiGunleri.xhtml"
+    TARGET="rules:#firmateknolojiGunleri.xhtml"
+    TITLE="firmateknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaProfil::#firmaProfil.xhtml"
+    NAME="output4" PATH="/firmaProfil.xhtml"
+    TARGET="rules:#firmaProfil.xhtml" TITLE="firmaProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaGelenBasvuru::#firmaGelenBasvuru.xhtml"
+    NAME="output5" PATH="/firmaGelenBasvuru.xhtml"
+    TARGET="rules:#firmaGelenBasvuru.xhtml" TITLE="firmaGelenBasvuru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaCalisanKayit::#firmaCalisanKayit.xhtml"
+    NAME="output6" PATH="/firmaCalisanKayit.xhtml"
+    TARGET="rules:#firmaCalisanKayit.xhtml" TITLE="firmaCalisanKayit" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#firmaProfil.xhtml" PATH="/firmaProfil.xhtml"
+  SHAPE="352,64,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#firmaProfil.xhtml:0" NAME="item"
+   PATH="/firmaProfil.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="firmailanver1::#firmailanver1.xhtml"
+    NAME="output" PATH="/firmailanver1.xhtml"
+    TARGET="rules:#firmailanver1.xhtml" TITLE="firmailanver1" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaBilgileri::#firmaBilgileri.xhtml"
+    NAME="output1" PATH="/firmaBilgileri.xhtml"
+    TARGET="rules:#firmaBilgileri.xhtml" TITLE="firmaBilgileri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="yarismaYap::#yarismaYap.xhtml"
+    NAME="output2" PATH="/yarismaYap.xhtml"
+    TARGET="rules:#yarismaYap.xhtml" TITLE="yarismaYap" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaAnasayfa::#firmaAnasayfa.xhtml"
+    NAME="output3" PATH="/firmaAnasayfa.xhtml"
+    TARGET="rules:#firmaAnasayfa.xhtml" TITLE="firmaAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="firmateknolojiGunleri::#firmateknolojiGunleri.xhtml"
+    NAME="output4" PATH="/firmateknolojiGunleri.xhtml"
+    TARGET="rules:#firmateknolojiGunleri.xhtml"
+    TITLE="firmateknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaGelenBasvuru::#firmaGelenBasvuru.xhtml"
+    NAME="output5" PATH="/firmaGelenBasvuru.xhtml"
+    TARGET="rules:#firmaGelenBasvuru.xhtml" TITLE="firmaGelenBasvuru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaCalisanKayit::#firmaCalisanKayit.xhtml"
+    NAME="output6" PATH="/firmaCalisanKayit.xhtml"
+    TARGET="rules:#firmaCalisanKayit.xhtml" TITLE="firmaCalisanKayit" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#firmaGelenBasvuru.xhtml"
+  PATH="/firmaGelenBasvuru.xhtml" SHAPE="703,191,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#firmaGelenBasvuru.xhtml:0" NAME="item"
+   PATH="/firmaGelenBasvuru.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="firmailanver1::#firmailanver1.xhtml"
+    NAME="output" PATH="/firmailanver1.xhtml"
+    TARGET="rules:#firmailanver1.xhtml" TITLE="firmailanver1" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaProfil::#firmaProfil.xhtml"
+    NAME="output1" PATH="/firmaProfil.xhtml"
+    TARGET="rules:#firmaProfil.xhtml" TITLE="firmaProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaAnasayfa::#firmaAnasayfa.xhtml"
+    NAME="output2" PATH="/firmaAnasayfa.xhtml"
+    TARGET="rules:#firmaAnasayfa.xhtml" TITLE="firmaAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaBilgileri::#firmaBilgileri.xhtml"
+    NAME="output3" PATH="/firmaBilgileri.xhtml"
+    TARGET="rules:#firmaBilgileri.xhtml" TITLE="firmaBilgileri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="yarismaYap::#yarismaYap.xhtml"
+    NAME="output4" PATH="/yarismaYap.xhtml"
+    TARGET="rules:#yarismaYap.xhtml" TITLE="yarismaYap" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="firmateknolojiGunleri::#firmateknolojiGunleri.xhtml"
+    NAME="output5" PATH="/firmateknolojiGunleri.xhtml"
+    TARGET="rules:#firmateknolojiGunleri.xhtml"
+    TITLE="firmateknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaCalisanKayit::#firmaCalisanKayit.xhtml"
+    NAME="output6" PATH="/firmaCalisanKayit.xhtml"
+    TARGET="rules:#firmaCalisanKayit.xhtml" TITLE="firmaCalisanKayit" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#firmaCalisanKayit.xhtml"
+  PATH="/firmaCalisanKayit.xhtml" SHAPE="216,880,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#firmaCalisanKayit.xhtml:0" NAME="item"
+   PATH="/firmaCalisanKayit.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="firmateknolojiGunleri::#firmateknolojiGunleri.xhtml"
+    NAME="output" PATH="/firmateknolojiGunleri.xhtml"
+    TARGET="rules:#firmateknolojiGunleri.xhtml"
+    TITLE="firmateknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaBilgileri::#firmaBilgileri.xhtml"
+    NAME="output1" PATH="/firmaBilgileri.xhtml"
+    TARGET="rules:#firmaBilgileri.xhtml" TITLE="firmaBilgileri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="yarismaYap::#yarismaYap.xhtml"
+    NAME="output2" PATH="/yarismaYap.xhtml"
+    TARGET="rules:#yarismaYap.xhtml" TITLE="yarismaYap" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaAnasayfa::#firmaAnasayfa.xhtml"
+    NAME="output3" PATH="/firmaAnasayfa.xhtml"
+    TARGET="rules:#firmaAnasayfa.xhtml" TITLE="firmaAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaProfil::#firmaProfil.xhtml"
+    NAME="output4" PATH="/firmaProfil.xhtml"
+    TARGET="rules:#firmaProfil.xhtml" TITLE="firmaProfil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaProfil1::#firmaProfil.xhtml"
+    NAME="output5" PATH="/firmaProfil.xhtml"
+    TARGET="rules:#firmaProfil.xhtml" TITLE="firmaProfil1" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmailanver1::#firmailanver1.xhtml"
+    NAME="output6" PATH="/firmailanver1.xhtml"
+    TARGET="rules:#firmailanver1.xhtml" TITLE="firmailanver1" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="firmaGelenBasvuru::#firmaGelenBasvuru.xhtml"
+    NAME="output7" PATH="/firmaGelenBasvuru.xhtml"
+    TARGET="rules:#firmaGelenBasvuru.xhtml" TITLE="firmaGelenBasvuru" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#CalisanTeknolojiGunleri.xhtml"
+  PATH="/CalisanTeknolojiGunleri.xhtml" SHAPE="666,993,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#CalisanTeknolojiGunleri.xhtml:0" NAME="item"
+   PATH="/CalisanTeknolojiGunleri.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="firmaCalisanAnasayfa::#firmaCalisanAnasayfa.xhtml" NAME="output"
+    PATH="/firmaCalisanAnasayfa.xhtml"
+    TARGET="rules:#firmaCalisanAnasayfa.xhtml"
+    TITLE="firmaCalisanAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="FirmaCalisanYorum::#FirmaCalisanYorum.xhtml"
+    NAME="output1" PATH="/FirmaCalisanYorum.xhtml"
+    TARGET="rules:#FirmaCalisanYorum.xhtml" TITLE="FirmaCalisanYorum" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#FirmaCalisanYorum.xhtml"
+  PATH="/FirmaCalisanYorum.xhtml" SHAPE="1016,1000,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#FirmaCalisanYorum.xhtml:0" NAME="item"
+   PATH="/FirmaCalisanYorum.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="firmaCalisanAnasayfa::#firmaCalisanAnasayfa.xhtml" NAME="output"
+    PATH="/firmaCalisanAnasayfa.xhtml"
+    TARGET="rules:#firmaCalisanAnasayfa.xhtml"
+    TITLE="firmaCalisanAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="CalisanTeknolojiGunleri::#CalisanTeknolojiGunleri.xhtml"
+    NAME="output1" PATH="/CalisanTeknolojiGunleri.xhtml"
+    TARGET="rules:#CalisanTeknolojiGunleri.xhtml"
+    TITLE="CalisanTeknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#OgrenciYorumOku.xhtml"
+  PATH="/OgrenciYorumOku.xhtml" SHAPE="465,977,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#OgrenciYorumOku.xhtml:0" NAME="item"
+   PATH="/OgrenciYorumOku.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="mailAt::#mailAt.xhtml" NAME="output"
+    PATH="/mailAt.xhtml" TARGET="rules:#mailAt.xhtml" TITLE="mailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciFirmaGor::#ogrenciFirmaGor.xhtml"
+    NAME="output1" PATH="/ogrenciFirmaGor.xhtml"
+    TARGET="rules:#ogrenciFirmaGor.xhtml" TITLE="ogrenciFirmaGor" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciBasvurularim::#ogrenciBasvurularim.xhtml" NAME="output2"
+    PATH="/ogrenciBasvurularim.xhtml"
+    TARGET="rules:#ogrenciBasvurularim.xhtml"
+    TITLE="ogrenciBasvurularim" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="teknolojiGunleri::#teknolojiGunleri.xhtml"
+    NAME="output3" PATH="/teknolojiGunleri.xhtml"
+    TARGET="rules:#teknolojiGunleri.xhtml" TITLE="teknolojiGunleri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciAnasayfa::#ogrenciAnasayfa.xhtml"
+    NAME="output4" PATH="/ogrenciAnasayfa.xhtml"
+    TARGET="rules:#ogrenciAnasayfa.xhtml" TITLE="ogrenciAnasayfa" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciBilgileri::#ogrenciBilgileri.xhtml"
+    NAME="output5" PATH="/ogrenciBilgileri.xhtml"
+    TARGET="rules:#ogrenciBilgileri.xhtml" TITLE="ogrenciBilgileri" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="OgrenciSoru::#OgrenciSoru.xhtml"
+    NAME="output6" PATH="/OgrenciSoru.xhtml"
+    TARGET="rules:#OgrenciSoru.xhtml" TITLE="OgrenciSoru" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciFirmaListele::#ogrenciFirmaListele.xhtml" NAME="output7"
+    PATH="/ogrenciFirmaListele.xhtml"
+    TARGET="rules:#ogrenciFirmaListele.xhtml"
+    TITLE="ogrenciFirmaListele" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ogrenciBilgisayarBilgisi::#ogrenciBilgisayarBilgisi.xhtml"
+    NAME="output8" PATH="/ogrenciBilgisayarBilgisi.xhtml"
+    TARGET="rules:#ogrenciBilgisayarBilgisi.xhtml"
+    TITLE="ogrenciBilgisayarBilgisi" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="CalisanaMailAt::#CalisanaMailAt.xhtml"
+    NAME="output9" PATH="/CalisanaMailAt.xhtml"
+    TARGET="rules:#CalisanaMailAt.xhtml" TITLE="CalisanaMailAt" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="ogrenciYabanciDil::#ogrenciYabanciDil.xhtml"
+    NAME="output10" PATH="/ogrenciYabanciDil.xhtml"
+    TARGET="rules:#ogrenciYabanciDil.xhtml" TITLE="ogrenciYabanciDil" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="sertifikaBilgisi::#sertifikaBilgisi.xhtml"
+    NAME="output11" PATH="/sertifikaBilgisi.xhtml"
+    TARGET="rules:#sertifikaBilgisi.xhtml" TITLE="sertifikaBilgisi" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>

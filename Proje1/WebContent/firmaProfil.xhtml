@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+</h:head>
+<body>
+	<f:view>
+
+		<h:form>
+			<link href="ozellik.css" rel="stylesheet" type="text/css" />
+			<table border="1" width="1500" cellpadding="1" cellspacing="1" height="1000" align="center">
+				<div id="ustCerceve">
+					<ul id="icerik"></ul>
+					
+					<tr id="menu">
+					
+					
+				
+						<td width="500" style="background:#C0E6FF" >
+							<li align="center" type="none"  style="font-weight:bold;">FİRMA BİLGİLERİ</li>
+						
+					
+					</td>
+					
+						<td width="4500" >
+							<h:commandLink action="firmaAnasayfa" value="Anasayfa" /> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="firmaBilgileri" value="Firma Bilgileri" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="pass" value="Firma Profili" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="firmaGelenBasvuru" value="Gelen Başvurular" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							<h:commandLink action="firmailanver1" value="İlan Ver" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					
+					
+					</td>
+					
+					</tr>
+					
+					
+					
+					
+									
+			<tr >
+					
+				<td    Valign="top" style="background:#C0E6FF">
+				<br></br>
+						<div  style="text-align:center"  >
+							 <img src="deneme.png" height="200" width="200"  border="2" style=" border-radius:50%;"></img>
+						</div>
+						<h:body>
+							<br></br>
+						
+							<li type="none" style="position: absolute;  left: 20px;top:400px;">
+						
+						
+						<h:commandButton action="firmateknolojiGunleri" value="Teknoloji Günleri"  style=" background: url(teknoloji_gunleri1_32.png);background-repeat:no-repeat;text-align:center;width:220px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+							
+							
+						
+						
+					
+						
+						<br></br>
+						
+						<li type="none" style="position: absolute;  left: 20px;top:450px;">
+						
+						
+						<h:commandButton action="yarismaYap" value="Yarışma Sorusu Hazırla"  style=" background: url(yarisma_32.png);background-repeat:no-repeat;text-align:center;width:260px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+						
+							<br></br>
+						
+						<li type="none" style="position: absolute;  left: 20px;top:500px;">
+						
+						
+						<h:commandButton action="firmaCalisanKayit" value="Çalışan Kaydet"  style=" background: url(calisan1.png);background-repeat:no-repeat;text-align:center;width:200px;height:35px;border: 3px;color:blue;text-decoration:underline;font-weight:bold;font-size:15px"/>
+						</li>
+				
+				</h:body>
+				</td>
+				<td id="ogrenciSag"  Valign="top">
+				
+				<br></br>		<br></br>		<br></br>		<br></br>		<br></br>		
+				<p:dataTable value="#{firmaBean.firmaBilgileriListesi}" var="sn">
+				<f:facet name="header">Firma Bilgisi</f:facet>
+				<p:column>
+					<f:facet name="header">Seç</f:facet>
+						<h:commandLink value="Sec" >
+							<f:setPropertyActionListener value="#{sn}" target="#{firmaBean.firma_bilgileri}" ></f:setPropertyActionListener>
+				
+						</h:commandLink>
+				
+				</p:column>
+				<p:column>
+					<f:facet name="header">Firma E-Mail</f:facet>
+						<h:outputText value="#{sn.email}" />
+				
+				</p:column>
+				
+			    <p:column>
+					<f:facet name="header"> Firma Adı</f:facet>
+						<h:outputText value="#{sn.firma_adi}" />
+				
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header">Firma Adresi</f:facet>
+						<h:outputText value="#{sn.adres}" />
+				
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header">Firma Faks</f:facet>
+						<h:outputText value="#{sn.faks}" />
+				
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header">Firma Tipi</f:facet>
+						<h:outputText value="#{sn.firma_tipi}" />
+				
+				</p:column>
+			    
+				<p:column>
+					<f:facet name="header"> Sektör</f:facet>
+						<h:outputText value="#{sn.sektor}" />
+				
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header"> Firma Telefon</f:facet>
+						<h:outputText value="#{sn.telefon}" />
+				
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header"> Firma Web Sitesi</f:facet>
+						<h:outputText value="#{sn.url}" />
+				
+				</p:column>
+				
+				</p:dataTable>	
+				<br></br>	<br></br>		<br></br>		<br></br>		<br></br>		<br></br>				
+						
+						</td>
+					
+				
+				
+			</tr>
+	
+
+					
+				</div>
+	
+				
+			</table>
+		</h:form>
+	</f:view>
+
+</body>
+</html>

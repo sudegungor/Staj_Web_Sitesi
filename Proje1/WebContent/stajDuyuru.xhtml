@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+
+<style>
+		.buttongiris{
+	text-decoration:none;
+	font-size:18px;
+	margin-left:9px;
+	display:inline-block;
+	 }
+	.seffaf{
+	color: black;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 12px;}
+	.seffaf:hover {
+	color:white;
+	background-color:#696969;
+}
+	.button2{border-radius:12px;padding: 12px 32px;font-size: 16px;background-color:#FA76FA;color:#FFFFFF;font-weight:bold}
+	.button2:hover{box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+	
+	
+	
+	</style>
+</h:head>
+<body>
+	<f:view>
+		<h:form>
+		<link href="ozellik.css" rel="stylesheet" type="text/css" />
+			<table border="1" width="1030" cellpadding="1" cellspacing="1" >
+			
+				<div id="ustCerceve">
+				<ul id="textOz" >
+			<h:commandButton action="ogrenciGirisEkrani" value="Öğrenci Girişi" class="button2" style="position: absolute;left:900px; top:25px;"></h:commandButton>
+					
+					<h:commandButton action="firmaGirisEkrani" value="Firma Girişi" class="button2" style="position: absolute;left:1100px; top:25px;"></h:commandButton>
+						
+					<h:commandButton action="calisanGirisEkrani" value="Firma Çalışan Girişi" class="button2" style="position: absolute;left:1280px; top:25px;"></h:commandButton>
+							
+					
+
+
+				</ul>
+					<ul id="icerik"></ul>
+					<ul id="bosluk"></ul>
+					
+					<ul>
+					<td id="solIcerik"><h:commandLink action="anasayfa" value="İs Hayati Hakkinda Bilgiler" /> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					<h:commandLink action="stajDuyuru" value="Staj Duyuruları" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					<h:commandLink action="cv" value="Cv Hazırlamanın Püf Noktaları" /></td>
+					
+					
+					<td id="sagIcerik">
+					
+					<h:commandButton action="stajDuyuru" value="Ögrenci Kayıt" class="buttongiris seffaf" style="width:250px"/> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;	&nbsp;	&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+					<h:commandButton action="firmastajDuyuru" value="Firma Kayıt" class="buttongiris seffaf" style="width:250px" />&nbsp;	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					 </td>
+					
+					
+					
+					<tr>
+					
+					<td  id="solAltIcerik">
+				
+				<p:imageCropper image="duyuru1.png" height="60" width="60"></p:imageCropper>
+				<ul>&nbsp; </ul>
+				<ul>&nbsp; </ul>
+				<ul>&nbsp; </ul>
+				
+				<b style="color:Red;">Aktif Staj Bilgisi Bulunmamaktadır.</b>
+				<ul>&nbsp; </ul>
+				<ul>&nbsp; </ul>
+				<ul>&nbsp; </ul>
+				
+			
+				
+					</td>
+					
+				<td id="sagAltIcerik"  style="background:#E8E9E9;">
+								<tr>
+								
+									<h:panelGrid columns="3">
+										<ul style="position: absolute; left: 750px; top: 290px;">E-mail:
+										</ul>
+										<p:inputText value="#{ogrenciBean.ogrenciGiris.email}"
+											size="30"
+											style="position: absolute;left: 900px;top: 300px; overflow: hidden; "></p:inputText>
+										<h:graphicImage value="/mail.png"
+											style="position: absolute;left: 1215px;top: 303px;" />
+										<br />
+										<ul style="position: absolute; left: 750px; top: 340px;">Ad:
+										</ul>
+										<p:inputText value="#{ogrenciBean.ogrenciGiris.ad}" size="30"
+											style="position: absolute;left: 900px;top: 350px;"></p:inputText>
+										<h:graphicImage value="/person.png"
+											style="position: absolute;left: 1215px;top: 353px;" />
+										<ul style="position: absolute; left: 750px; top: 390px;">Soyad:
+										</ul>
+										<p:inputText value="#{ogrenciBean.ogrenciGiris.soyad}"
+											size="30"
+											style="position: absolute;left: 900px;top: 400px;"></p:inputText>
+										<h:graphicImage value="/person.png"
+											style="position: absolute;left: 1215px;top: 403px;" />
+										<ul style="position: absolute; left: 750px; top: 440px;">Parola:
+										</ul>
+										<p:inputText type="password" value="#{ogrenciBean.ogrenciGiris.sifre}"
+											size="30"
+											style="position: absolute;left: 900px;top: 450px;"></p:inputText>
+											
+										<h:graphicImage value="/sifre.png"
+											style="position: absolute;left: 1215px;top: 453px;" />
+										<ul>
+											<h:commandButton action="#{ogrenciBean.ogrenciGirisKaydet()}"
+												value="Kayit Ol" id="buton"
+												style="background-color:#C0E6FF;color:white;width:30%;position: absolute; left: 785px;top: 503px;" />
+										</ul>
+										<ul>
+											<h:commandLink action="pass"
+												value="Yardıma mı ihtiyacın var?"
+												style="position:absolute;left:905px;top:533px;" />
+										</ul>
+										<ul style="position: absolute; left: 800px; top: 550px;">Giriş
+											yaparak INTERNSHIP TIME
+										</ul>
+										<h:commandLink action="pass" value=" Hizmet Koşulları'nı "
+											style="position:absolute;left:1080px;top:565px;" />
+										<ul style="position: absolute; left: 1180px; top: 550px;">ve
+										</ul>
+										<h:commandLink action="pass" value=" KVKK 'yı "
+											style="position:absolute;left:840px;top:590px;" />
+										<ul style="position: absolute; left: 870px; top: 575px;">kabul
+											etmiş olursunuz.
+												
+										</ul>
+									
+									
+									</h:panelGrid>
+									
+								</tr>
+							</td>
+					</tr>
+					
+					
+					
+					
+					
+					</ul>
+				</div>	
+			</table>
+		</h:form>
+	</f:view>
+
+</body>
+</html>
